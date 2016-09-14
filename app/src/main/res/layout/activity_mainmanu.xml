@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9b6a21"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.a.lannav1.MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ยินดีต้อนรับ ________"
+        android:textSize="50sp" />
+
+    <Button
+
+        android:id="@+id/btexercise"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="exercise"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/btgametest"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="gametest"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/btback"
+
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="back"
+        android:textSize="50sp" />
+
+
+</LinearLayout>

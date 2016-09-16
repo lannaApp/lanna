@@ -1,6 +1,7 @@
 package com.example.a.lannav1;
 
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import java.util.ArrayList;
 import android.content.Context;
@@ -22,6 +23,7 @@ public class CP4_11 extends Fragment {
 
     View mView;
     private Paint mPaint;
+    MediaPlayer mPlayer;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,8 @@ public class CP4_11 extends Fragment {
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.MATCH_PARENT));
         init();
+        mPlayer = MediaPlayer.create(getActivity(), R.raw.title);
+        mPlayer.start();
         return v;
     }
 
@@ -49,6 +53,18 @@ public class CP4_11 extends Fragment {
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
         mPaint.setStrokeWidth(3);
+    }
+
+    @Override
+    public void onPause() {
+        mPlayer.stop();
+        super.onPause();
+    }
+
+    @Override
+    public void onDestroyView() {
+        mPlayer.stop();
+        super.onDestroyView();
     }
 
     class DrawingView extends View {

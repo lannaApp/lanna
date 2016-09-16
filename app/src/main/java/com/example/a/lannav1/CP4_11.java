@@ -9,15 +9,13 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 import android.support.v4.app.Fragment;
-
-
-
-
 
 public class CP4_11 extends Fragment {
 
@@ -25,15 +23,21 @@ public class CP4_11 extends Fragment {
     private Paint mPaint;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sss);
-        LinearLayout layout = (LinearLayout) findViewById(R.id.myDrawing);
-        mView = new DrawingView(this);
+        init();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.sss, container, false);
+        LinearLayout layout = (LinearLayout) v.findViewById(R.id.myDrawing);
+        mView = new DrawingView(getActivity());
         layout.addView(mView, new LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.MATCH_PARENT));
         init();
+        return v;
     }
 
     private void init() {

@@ -10,11 +10,14 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.support.v4.app.Fragment;
@@ -24,6 +27,7 @@ public class CP4_11 extends Fragment {
     View mView;
     private Paint mPaint;
     MediaPlayer mPlayer;
+    private Button newButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,26 +37,58 @@ public class CP4_11 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.sss, container, false);
-        FrameLayout layout = (FrameLayout) v.findViewById(R.id.myDrawing);
+        View v = inflater.inflate(R.layout.fragment_cp4_11, container, false);
+
+        //restart
+        newButton = (Button) v.findViewById(R.id.btrestart);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4_11 cp411 = new CP4_11();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp411);
+                transaction.commit();
+            }
+        });
+
+        //back
+        newButton = (Button) v.findViewById(R.id.btback);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4 fm_cp4 = new CP4();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, fm_cp4);
+                transaction.commit();
+            }
+        });
+
+        FrameLayout layout = (FrameLayout) v.findViewById(R.id.fm_cp4_11);
         mView = new DrawingView(getActivity());
         layout.addView(mView, new LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.MATCH_PARENT));
+                LinearLayout.LayoutParams.MATCH_PARENT  ));
         init();
         mPlayer = MediaPlayer.create(getActivity(), R.raw.title);
         mPlayer.start();
+
+
+
         return v;
     }
 
     private void init() {
         mPaint = new Paint();
         mPaint.setDither(true);
-        mPaint.setColor(0xFFFFFF00);
+        mPaint.setColor(0xFFFF0000);
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(3);
+        mPaint.setStrokeWidth(15);
     }
 
     @Override

@@ -70,8 +70,8 @@ public class CP4_11 extends Fragment {
         FrameLayout layout = (FrameLayout) v.findViewById(R.id.fm_cp4_11);
         mView = new DrawingView(getActivity());
         layout.addView(mView, new LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.MATCH_PARENT  ));
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT  ));
         init();
         mPlayer = MediaPlayer.create(getActivity(), R.raw.title);
         mPlayer.start();

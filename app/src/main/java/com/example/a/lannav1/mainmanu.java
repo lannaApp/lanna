@@ -58,9 +58,7 @@ public class mainmanu extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_mainmanu, container, false);
 
-        //tvnameuser
-        tvnameuset = (TextView)v.findViewById(R.id.name);
-        tvnameuset.setText(getnameuser);
+
 
         //btexercise
         newButton = (Button)v.findViewById(R.id.btexercise);
@@ -93,15 +91,15 @@ public class mainmanu extends Fragment {
 
 
         //btback
-        newButton = (Button) v.findViewById(R.id.btback);
+        newButton = (Button) v.findViewById(R.id.btrank);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                FirstPageFragment firstpage = new FirstPageFragment();
+                Fmrank rank = new Fmrank();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, firstpage);
+                transaction.replace(R.id.fragment_container, rank);
                 transaction.commit();
             }
         });

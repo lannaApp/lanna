@@ -71,7 +71,7 @@ public class Fmrank extends Fragment {
             @Override
             public void onClick(View v) {
 
-                FirstPageFragment firstpage = new FirstPageFragment();
+                mainmanu firstpage = new mainmanu();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.replace(R.id.fragment_container, firstpage);

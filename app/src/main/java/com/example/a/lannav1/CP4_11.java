@@ -67,24 +67,34 @@ public class CP4_11 extends Fragment {
             }
         });
 
+
+        newButton = (Button) v.findViewById(R.id.btsound);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mPlayer = MediaPlayer.create(getActivity(), R.raw.s4_001);
+                mPlayer.start();
+            }
+        });
+
         FrameLayout layout = (FrameLayout) v.findViewById(R.id.fm_cp4_11);
         mView = new DrawingView(getActivity());
         layout.addView(mView, new LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT  ));
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.MATCH_PARENT));
         init();
-        mPlayer = MediaPlayer.create(getActivity(), R.raw.title);
+        mPlayer = MediaPlayer.create(getActivity(), R.raw.s4_001);
         mPlayer.start();
-
 
 
         return v;
     }
-
+//0xFF # FF FF FF สี
     private void init() {
         mPaint = new Paint();
         mPaint.setDither(true);
-        mPaint.setColor(0xFFFF0000);
+        mPaint.setColor(0xFFFFFFFF);
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
@@ -111,7 +121,7 @@ public class CP4_11 extends Fragment {
         public DrawingView(Context context) {
             super(context);
             path = new Path();
-            mBitmap = Bitmap.createBitmap(820, 480, Bitmap.Config.ARGB_8888);
+            mBitmap = Bitmap.createBitmap(300, 300, Bitmap.Config.ARGB_8888);
             mCanvas = new Canvas(mBitmap);
             this.setBackgroundColor(Color.TRANSPARENT);
         }

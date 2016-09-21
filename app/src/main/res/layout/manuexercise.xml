@@ -4,50 +4,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#9b6a21"
+    android:background="@drawable/background1"
     android:gravity="center"
     tools:context="com.example.a.lannav1.MainActivity">
 
 
     <Button
         android:id="@+id/btchapter1"
-        android:layout_width="400dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="chapter1"
-        android:textSize="50sp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btchapter2"
-        android:layout_width="400dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="chapter2"
-        android:textSize="50sp" />
+         android:text="chapter2"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btchapter3"
-        android:layout_width="400dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+
         android:text="chapter3"
-        android:textSize="50sp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btchapter4"
-        android:layout_width="400dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+
         android:text="chapter4"
-        android:textSize="50sp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btback"
-        android:layout_width="400dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+
         android:text="back"
-        android:textSize="50sp" />
+        android:textSize="30sp" />
 
 
 </LinearLayout>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#9b6a21"
+    android:background="@drawable/background3"
     android:gravity="center"
     tools:context="com.example.a.lannav1.MainActivity">
 
@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="411"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:layout_gravity="center_horizontal" />
 
 
@@ -22,10 +22,10 @@
     <Button
         android:id="@+id/btback"
         android:layout_marginTop="20dp"
-        android:layout_width="400dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="back"
-        android:textSize="50sp"
+        android:textSize="30sp"
         />
 
 

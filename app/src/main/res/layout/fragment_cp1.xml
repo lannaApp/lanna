@@ -4,26 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#9b6a21"
+    android:background="@drawable/background3"
     android:gravity="center"
     tools:context="com.example.a.lannav1.MainActivity">
 
 
-    <TextView
-        android:layout_width="800sp"
-        android:layout_height="400sp"
-        android:background="#ffffff"
-        android:text="CP1"
-        android:textSize="100sp"
-        android:gravity="center"  />
+
 
     <Button
         android:id="@+id/btback"
         android:layout_marginTop="20dp"
-        android:layout_width="400dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="back"
-        android:textSize="50sp"
+        android:textSize="30sp"
         />
 
 

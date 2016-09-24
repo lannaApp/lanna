@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class CP4 extends Fragment {
+public class CP41 extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -24,7 +24,7 @@ public class CP4 extends Fragment {
     private Button newButton;
 
 
-    public CP4() {
+    public CP41() {
         // Required empty public constructor
     }
 
@@ -37,8 +37,8 @@ public class CP4 extends Fragment {
      * @return A new instance of fragment CP4.
      */
     // TODO: Rename and change types and number of parameters
-    public static CP4 newInstance(String param1, String param2) {
-        CP4 fragment = new CP4();
+    public static CP41 newInstance(String param1, String param2) {
+        CP41 fragment = new CP41();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,34 +59,34 @@ public class CP4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_cp4, container, false);
+        View v = inflater.inflate(R.layout.fragment_cp41, container, false);
 
 
-        //411
-        newButton = (Button) v.findViewById(R.id.btcp4_11);
+        //421
+        newButton = (Button) v.findViewById(R.id.btcp4_21);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP4_11 cp411 = new CP4_11();
+                CP4_21 cp421 = new CP4_21();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp411);
+                transaction.replace(R.id.fragment_container, cp421);
                 transaction.commit();
             }
         });
 
 
-        //btnext
-        newButton = (Button) v.findViewById(R.id.btnext);
+        //btback
+        newButton = (Button) v.findViewById(R.id.btback);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP41 cp41 = new CP41();
+                CP4 cp4 = new CP4();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp41);
+                transaction.replace(R.id.fragment_container, cp4);
                 transaction.commit();
             }
         });

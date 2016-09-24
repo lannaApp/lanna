@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/background1"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.example.a.lannav1.MainActivity">
 
 
@@ -13,38 +13,35 @@
         android:id="@+id/btchapter1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="chapter1"
+        android:text="พยัญชนะล้านนา"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btchapter2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-         android:text="chapter2"
+        android:text="สระล้านนา"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btchapter3"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-
-        android:text="chapter3"
+        android:text="เครื่องหมายกากับ"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btchapter4"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-
-        android:text="chapter4"
+        android:text="ตัวเลขล้านนา"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btback"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-
-        android:text="back"
+        android:text="ย้อนกลับ"
         android:textSize="30sp" />
 
 

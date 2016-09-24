@@ -2,6 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background2"
+
     android:orientation="vertical"
     android:paddingBottom="30dp"
     android:paddingLeft="30dp"
@@ -9,7 +10,7 @@
     android:paddingTop="30dp">
 
     <FrameLayout
-        android:id="@+id/fl_write"
+        android:id="@+id/fm_cp4_11"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center">
@@ -18,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:src="@drawable/p4_001" />
+            android:src="@drawable/p4_008" />
     </FrameLayout>
 
     <Button

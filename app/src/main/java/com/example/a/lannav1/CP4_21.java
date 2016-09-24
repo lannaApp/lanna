@@ -22,7 +22,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.support.v4.app.Fragment;
 
-public class CP4_11 extends Fragment {
+public class CP4_21 extends Fragment {
 
     View mView;
     private Paint mPaint;
@@ -37,7 +37,7 @@ public class CP4_11 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_cp4_11, container, false);
+        View v = inflater.inflate(R.layout.fragment_cp4_21, container, false);
 
         //restart
         newButton = (Button) v.findViewById(R.id.btrestart);
@@ -45,10 +45,10 @@ public class CP4_11 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                CP4_11 cp411 = new CP4_11();
+                CP4_21 re = new CP4_21();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp411);
+                transaction.replace(R.id.fragment_container, re);
                 transaction.commit();
             }
         });
@@ -90,7 +90,7 @@ public class CP4_11 extends Fragment {
 
         return v;
     }
-//0xFF # FF FF FF สี
+    //0xFF # FF FF FF สี
     private void init() {
         mPaint = new Paint();
         mPaint.setDither(true);

@@ -13,35 +13,35 @@
         android:id="@+id/btlevel1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="level1"
+        android:text="มินิเกม1"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btlevel2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-         android:text="level2"
+         android:text="มินิเกม2"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btlevel3"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-          android:text="level3"
+          android:text="มินิเกม3"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btlevel4"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="level4"
+        android:text="มินิเกม4"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btback"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="back"
+        android:text="ย้อนกลับ"
         android:textSize="30sp" />
 
 

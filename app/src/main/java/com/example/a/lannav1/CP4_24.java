@@ -33,6 +33,8 @@ public class CP4_24 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        utils = new Utils();
+        mPaint = utils.preparePaint();
         init();
     }
 
@@ -60,10 +62,10 @@ public class CP4_24 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                CP4 fm_cp4 = new CP4();
+                CP41 fm_cp41 = new CP41();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, fm_cp4);
+                transaction.replace(R.id.fragment_container, fm_cp41);
                 transaction.commit();
             }
         });

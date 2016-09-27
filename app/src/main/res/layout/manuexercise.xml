@@ -27,7 +27,7 @@
         android:id="@+id/btchapter3"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="เครื่องหมายกากับ"
+        android:text="เครื่องหมายกำกับ"
         android:textSize="30sp" />
 
     <Button

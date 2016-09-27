@@ -33,14 +33,12 @@ public class CP4_30 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        utils = new Utils();
-        mPaint = utils.preparePaint();
         init();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_cp4_30, container, false);
+        View v = inflater.inflate(R.layout.fragment_cp4_20, container, false);
 
         //restart
         newButton = (Button) v.findViewById(R.id.btrestart);
@@ -62,10 +60,10 @@ public class CP4_30 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                CP41 fm_cp41 = new CP41();
+                CP4 fm_cp4 = new CP4();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, fm_cp41);
+                transaction.replace(R.id.fragment_container, fm_cp4);
                 transaction.commit();
             }
         });

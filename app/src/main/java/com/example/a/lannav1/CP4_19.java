@@ -33,8 +33,6 @@ public class CP4_19 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        utils = new Utils();
-        mPaint = utils.preparePaint();
         init();
     }
 

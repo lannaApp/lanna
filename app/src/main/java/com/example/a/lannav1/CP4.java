@@ -75,6 +75,123 @@ public class CP4 extends Fragment {
                 transaction.commit();
             }
         });
+        //412
+        newButton = (Button) v.findViewById(R.id.btcp4_12);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4_12 cp412 = new CP4_12();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp412);
+                transaction.commit();
+            }
+        });
+        //413
+        newButton = (Button) v.findViewById(R.id.btcp4_13);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4_13 cp413 = new CP4_13();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp413);
+                transaction.commit();
+            }
+        });
+        //414
+        newButton = (Button) v.findViewById(R.id.btcp4_14);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4_14 cp414 = new CP4_14();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp414);
+                transaction.commit();
+            }
+        });
+        //415
+        newButton = (Button) v.findViewById(R.id.btcp4_15);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4_15 cp415 = new CP4_15();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp415);
+                transaction.commit();
+            }
+        });
+        //416
+        newButton = (Button) v.findViewById(R.id.btcp4_16);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4_16 cp416 = new CP4_16();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp416);
+                transaction.commit();
+            }
+        });
+        //417
+        newButton = (Button) v.findViewById(R.id.btcp4_17);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4_17 cp417 = new CP4_17();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp417);
+                transaction.commit();
+            }
+        });
+        //418
+        newButton = (Button) v.findViewById(R.id.btcp4_18);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4_18 cp418 = new CP4_18();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp418);
+                transaction.commit();
+            }
+        });
+        //419
+        newButton = (Button) v.findViewById(R.id.btcp4_19);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4_19 cp419 = new CP4_19();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp419);
+                transaction.commit();
+            }
+        });
+        //420
+        newButton = (Button) v.findViewById(R.id.btcp4_20);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP4_20 cp420 = new CP4_20();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp420);
+                transaction.commit();
+            }
+        });
 
 
         //btnext

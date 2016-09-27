@@ -19,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         mainmanu myFragment = new mainmanu();
-        MediaPlayer smain = MediaPlayer.create(this,R.raw.title);
+
+        MediaPlayer smain = MediaPlayer.create(MainActivity.this,R.raw.title);
         smain.start();
+
         smain.setLooping(true);
         smain.setScreenOnWhilePlaying(true);
 

@@ -25,6 +25,7 @@ import android.support.v4.app.Fragment;
 public class CP4_11 extends Fragment {
 
     View mView;
+    Utils utils;
     private Paint mPaint;
     MediaPlayer mPlayer;
     private Button newButton;
@@ -32,6 +33,8 @@ public class CP4_11 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        utils = new Utils();
+        mPaint = utils.preparePaint();
         init();
     }
 
@@ -92,13 +95,8 @@ public class CP4_11 extends Fragment {
     }
 //0xFF # FF FF FF สี
     private void init() {
-        mPaint = new Paint();
-        mPaint.setDither(true);
-        mPaint.setColor(0xFFFFFFFF);
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setStrokeJoin(Paint.Join.ROUND);
-        mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(15);
+        utils.preparePaint();
+
     }
 
     @Override

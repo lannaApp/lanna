@@ -28,6 +28,7 @@ public class CP4_18 extends Fragment {
     private Paint mPaint;
     MediaPlayer mPlayer;
     private Button newButton;
+    private Utils utils;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -94,13 +95,7 @@ public class CP4_18 extends Fragment {
     }
     //0xFF # FF FF FF สี
     private void init() {
-        mPaint = new Paint();
-        mPaint.setDither(true);
-        mPaint.setColor(0xFFFFFFFF);
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setStrokeJoin(Paint.Join.ROUND);
-        mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(15);
+        utils.preparePaint();
     }
 
     @Override

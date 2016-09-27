@@ -22,34 +22,43 @@
             android:layout_gravity="center">
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:text="กำกับเสียง"
-                android:textSize="35sp"/>
-
             <Button
-                android:id="@+id/btcp3_1"
+                android:id="@+id/btcp2_26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1"
+                android:text="26"
                 android:textSize="30sp"
                 />
 
             <Button
-                android:id="@+id/btcp3_2"
+                android:id="@+id/btcp2_27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2"
+                android:text="27"
                 android:textSize="30sp"
                 />
 
             <Button
-                android:id="@+id/btcp3_3"
+                android:id="@+id/btcp2_28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"
+                android:text="28"
+                android:textSize="30sp"
+                />
+
+            <Button
+                android:id="@+id/btcp2_29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29"
+                android:textSize="30sp"
+                />
+
+            <Button
+                android:id="@+id/btcp2_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
                 android:textSize="30sp"
                 />
 
@@ -64,36 +73,50 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:text="เป็นสระ"
-                android:textSize="35sp"/>
-
-
             <Button
-                android:id="@+id/btcp3_4"
+                android:id="@+id/btcp2_31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"
+                android:text="31"
                 android:textSize="30sp"
                 />
 
             <Button
-                android:id="@+id/btcp3_5"
+                android:id="@+id/btcp2_32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5"
+                android:text="32"
                 android:textSize="30sp"
                 />
 
+            <Button
+                android:id="@+id/btcp2_33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="33"
+                android:textSize="30sp"
+                />
 
+            <Button
+                android:id="@+id/btcp2_34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34"
+                android:textSize="30sp"
+                />
+
+            <Button
+
+                android:id="@+id/btcp2_35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35"
+                android:textSize="30sp"
+                />
 
         </LinearLayout>
 
         <LinearLayout
-
             android:id="@+id/num3"
             android:layout_below="@id/num2"
             android:orientation="horizontal"
@@ -101,57 +124,84 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:text="เป็นสระลดรูป"
-                android:textSize="35sp"/>
-
-
             <Button
-                android:id="@+id/btcp3_6"
+                android:id="@+id/btcp2_36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6"
+                android:text="36"
                 android:textSize="30sp"
                 />
 
             <Button
-                android:id="@+id/btcp3_7"
+                android:id="@+id/btcp2_37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7"
-                android:textSize="30sp"
-                />
-            <Button
-                android:id="@+id/btcp3_8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8"
+                android:text="37"
                 android:textSize="30sp"
                 />
 
             <Button
-                android:id="@+id/btcp3_9"
+                android:id="@+id/btcp2_38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9"
+                android:text="38"
                 android:textSize="30sp"
                 />
+
+            <Button
+                android:id="@+id/btcp2_39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="39"
+                android:textSize="30sp"
+                />
+
+            <Button
+
+                android:id="@+id/btcp2_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40"
+                android:textSize="30sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/num4"
+            android:layout_below="@id/num3"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btcp2_41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="41"
+                android:textSize="30sp"
+                />
+
 
 
         </LinearLayout>
-
         <LinearLayout
-            android:id="@+id/num4"
-            android:layout_below="@+id/num3"
+            android:id="@+id/num5"
+            android:layout_below="@+id/num4"
             android:orientation="horizontal"
             android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             >
+            <Button
 
+                android:id="@+id/btback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back"
+                android:textSize="30sp"
+
+                />
 
             <Button
 
@@ -162,8 +212,6 @@
                 android:textSize="30sp"
 
                 />
-
-
         </LinearLayout>
 
     </RelativeLayout>

@@ -26,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorWhite"
-                android:text="กำกับเสียง"
+                android:text="กำกับเสียง       "
                 android:textSize="35sp"/>
 
             <Button
@@ -68,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorWhite"
-                android:text="เป็นสระ"
+                android:text="เป็นสระ           "
                 android:textSize="35sp"/>
 
 
@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorWhite"
-                android:text="เป็นสระลดรูป"
+                android:text="เป็นสระลดรูป  "
                 android:textSize="35sp"/>
 
 

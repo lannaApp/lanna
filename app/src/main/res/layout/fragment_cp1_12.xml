@@ -9,7 +9,7 @@
     android:paddingTop="30dp">
 
     <FrameLayout
-        android:id="@+id/fl_write"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center">
@@ -19,6 +19,13 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:src="@drawable/p1_012" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_write"
+        android:layout_width="600dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center">
     </FrameLayout>
 
     <Button
@@ -45,11 +52,7 @@
         android:text="sound"
         android:textSize="30sp" />
 
-    <MediaController
-        android:layout_width="121dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/mediaController"
-        android:layout_gravity="right|top" />
+
 
 
 </FrameLayout>

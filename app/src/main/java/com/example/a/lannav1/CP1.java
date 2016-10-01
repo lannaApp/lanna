@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 
 public class CP1 extends Fragment {
@@ -22,6 +23,7 @@ public class CP1 extends Fragment {
     private String mParam1;
     private String mParam2;
     private Button newButton;
+    private ImageView newButton1;
 
 
     public CP1() {
@@ -63,8 +65,8 @@ public class CP1 extends Fragment {
 
 
         //1
-        newButton = (Button) v.findViewById(R.id.btcp1_1);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newButton1 = (ImageView) v.findViewById(R.id.btcp1_1);
+        newButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

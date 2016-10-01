@@ -9,7 +9,6 @@
     android:paddingTop="30dp">
 
     <FrameLayout
-        android:id="@+id/fl_write"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center">
@@ -21,35 +20,34 @@
             android:src="@drawable/p1_013" />
     </FrameLayout>
 
-    <Button
+    <FrameLayout
+        android:id="@+id/fl_write"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center">
+    </FrameLayout>
+
+    <ImageView
         android:id="@+id/btback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:text="back"
-        android:textSize="30sp" />
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_back" />
 
-    <Button
+
+    <ImageView
         android:id="@+id/btrestart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left|bottom"
-        android:text="restart"
-        android:textSize="30sp" />
+        android:src="@drawable/ic_retrun"   />
 
-    <Button
+    <ImageView
         android:id="@+id/btsound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
-        android:text="sound"
-        android:textSize="30sp" />
-
-    <MediaController
-        android:layout_width="121dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/mediaController"
-        android:layout_gravity="right|top" />
+        android:src="@drawable/ic_speaker"  />
 
 
 </FrameLayout>

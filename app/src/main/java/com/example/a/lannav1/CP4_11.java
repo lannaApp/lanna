@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.support.v4.app.Fragment;
 
@@ -28,7 +29,7 @@ public class CP4_11 extends Fragment {
     Utils utils;
     private Paint mPaint;
     MediaPlayer mPlayer;
-    private Button newButton;
+    private ImageView newButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,7 @@ public class CP4_11 extends Fragment {
         View v = inflater.inflate(R.layout.fragment_cp4_11, container, false);
 
         //restart
-        newButton = (Button) v.findViewById(R.id.btrestart);
+        newButton = (ImageView) v.findViewById(R.id.btrestart);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +58,7 @@ public class CP4_11 extends Fragment {
         });
 
         //back
-        newButton = (Button) v.findViewById(R.id.btback);
+        newButton = (ImageView) v.findViewById(R.id.btback);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,7 +72,7 @@ public class CP4_11 extends Fragment {
         });
 
 
-        newButton = (Button) v.findViewById(R.id.btsound);
+        newButton = (ImageView) v.findViewById(R.id.btsound);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

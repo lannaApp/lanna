@@ -14,7 +14,7 @@ public class Utils {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(10);
+        mPaint.setStrokeWidth(30);
         return mPaint;
     }
 

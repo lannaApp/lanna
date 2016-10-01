@@ -19,37 +19,36 @@
             android:layout_gravity="center"
             android:src="@drawable/p1_001" />
 
-        <ImageView
-            android:id="@+id/btback"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left|top"
-           android:src="@drawable/ic_back" />
-
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/fl_write"
-        android:layout_width="600dp"
-        android:layout_height="400dp"
+        android:layout_width="650dp"
+        android:layout_height="450dp"
         android:layout_gravity="center">
     </FrameLayout>
+
+    <ImageView
+        android:id="@+id/btback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_back" />
+
 
     <ImageView
         android:id="@+id/btrestart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left|bottom"
-        android:src="@drawable/ic_retrun"
-         />
+        android:src="@drawable/ic_retrun"   />
 
     <ImageView
         android:id="@+id/btsound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
-        android:src="@drawable/ic_speaker"
-         />
+        android:src="@drawable/ic_speaker"  />
 
 
 

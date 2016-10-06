@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -26,7 +27,7 @@ public class mainmanu extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String getnameuser;
-    private Button newButton;
+    private ImageView newButton;
     private TextView tvnameuset;
 
 
@@ -61,7 +62,7 @@ public class mainmanu extends Fragment {
 
 
         //btexercise
-        newButton = (Button)v.findViewById(R.id.btexercise);
+        newButton = (ImageView)v.findViewById(R.id.btexercise);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,7 +77,7 @@ public class mainmanu extends Fragment {
 
 
         //btgametest
-        newButton = (Button)v.findViewById(R.id.btgametest);
+        newButton = (ImageView)v.findViewById(R.id.btgametest);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,7 +92,7 @@ public class mainmanu extends Fragment {
 
 
         //btback
-        newButton = (Button) v.findViewById(R.id.btrank);
+        newButton = (ImageView) v.findViewById(R.id.btrank);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

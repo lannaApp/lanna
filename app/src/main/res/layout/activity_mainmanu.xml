@@ -3,42 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
+    android:background="@drawable/bg_min"
     android:gravity="center"
-    android:orientation="vertical"    >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="เฮียนตัวเมือง"
-        android:textColor="@color/colorWhite"
-        android:textSize="60sp"/>
+    android:orientation="horizontal"    >
 
 
-    <Button
 
+    <ImageView
         android:id="@+id/btexercise"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="เขียนตัวเมือง"
-        android:textSize="30sp" />
+        android:src="@mipmap/ic_write"
+        style="@style/bt_main"
 
-    <Button
+        />
+    <ImageView
         android:id="@+id/btgametest"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="มินิเกม"
-        android:textSize="30sp" />
+        android:src="@mipmap/ic_game"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="65dp"
+        style="@style/bt_main"
+        />
 
-    <Button
+    <ImageView
+
         android:id="@+id/btrank"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="คะแนน"
-        android:textSize="30sp" />
+        android:src="@mipmap/ic_rank"
+        style="@style/bt_main"
+        />
 
 
 </LinearLayout>

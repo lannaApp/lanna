@@ -1,48 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/background1"
+    android:background="@drawable/bg_lv_1"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.example.a.lannav1.MainActivity">
 
-
-    <Button
-        android:id="@+id/btlevel1"
-        android:layout_width="300dp"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="มินิเกม1"
-        android:textSize="30sp" />
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center">
 
-    <Button
-        android:id="@+id/btlevel2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-         android:text="มินิเกม2"
-        android:textSize="30sp" />
+        <LinearLayout
 
-    <Button
-        android:id="@+id/btlevel3"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-          android:text="มินิเกม3"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/btlevel4"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="มินิเกม4"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/btback"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="ย้อนกลับ"
-        android:textSize="30sp" />
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
 
-</LinearLayout>
+            <ImageView
+                android:id="@+id/btlevel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_lv1" />
+
+            <ImageView
+                android:id="@+id/btlevel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_lv2" />
+            <ImageView
+                android:id="@+id/btlevel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_lv3" />
+
+            <ImageView
+                android:id="@+id/btlevel4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_lv4" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/num1"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

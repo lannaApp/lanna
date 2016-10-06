@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -22,7 +23,7 @@ public class FmExercise extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private Button newButton;
+    private ImageView newButton;
 
 
     public FmExercise() {
@@ -63,7 +64,7 @@ public class FmExercise extends Fragment {
 
 
         //CP1
-        newButton = (Button) v.findViewById(R.id.btchapter1);
+        newButton = (ImageView) v.findViewById(R.id.btchapter1);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +78,7 @@ public class FmExercise extends Fragment {
         });
 
         //CP2
-        newButton = (Button) v.findViewById(R.id.btchapter2);
+        newButton = (ImageView) v.findViewById(R.id.btchapter2);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,7 +92,7 @@ public class FmExercise extends Fragment {
         });
 
         //CP3
-        newButton = (Button) v.findViewById(R.id.btchapter3);
+        newButton = (ImageView) v.findViewById(R.id.btchapter3);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -105,7 +106,7 @@ public class FmExercise extends Fragment {
         });
 
         //CP4
-        newButton = (Button) v.findViewById(R.id.btchapter4);
+        newButton = (ImageView) v.findViewById(R.id.btchapter4);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,7 +121,7 @@ public class FmExercise extends Fragment {
 
 
         //btback
-        newButton = (Button) v.findViewById(R.id.btback);
+        newButton = (ImageView) v.findViewById(R.id.btback);
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

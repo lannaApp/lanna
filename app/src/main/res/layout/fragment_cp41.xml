@@ -4,9 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-
-    android:background="@drawable/background3"
-
+    android:background="@drawable/bg_cp42"
+    style="@style/fl"
     tools:context="com.example.a.lannav1.MainActivity">
 
 
@@ -14,6 +13,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/bt_p1"
         android:layout_gravity="center">
         <LinearLayout
 
@@ -21,48 +21,40 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
             android:layout_gravity="center">
 
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="11"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_011"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_012"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="13"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_013"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="14"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_014"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_25"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="15"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_015"
                 />
+
         </LinearLayout>
 
         <LinearLayout
@@ -74,81 +66,58 @@
             android:layout_gravity="center">
 
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_26"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="16"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_016"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_27"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="17"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_017"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_28"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="18"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_018"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_29"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="19"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_019"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_30"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="20"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_020"
                 />
 
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/num3"
-            android:layout_below="@+id/num2"
-            android:orientation="horizontal"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
+        </RelativeLayout>
 
-            <Button
+    <ImageView
 
-                android:id="@+id/btback"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="back"
-                android:textSize="30sp"
+        android:id="@+id/bthome"
+        style="@style/bt_hnb"
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_home"
 
-                />
+        />
 
-            <Button
+    <ImageView
 
-                android:id="@+id/bthome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home"
-                android:textSize="30sp"
+        android:id="@+id/btback"
+        style="@style/bt_hnb"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/ic_back"
 
-                />
-
-
-        </LinearLayout>
-    </RelativeLayout>
+        />
 
 </FrameLayout>
 

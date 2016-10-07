@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background3"
+    android:background="@drawable/bg_cp1"
+    style="@style/fl"
     android:gravity="center"
     tools:context="com.example.a.lannav1.MainActivity">
 
@@ -12,6 +13,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/bt_p1"
         android:layout_gravity="center">
         <LinearLayout
 
@@ -22,44 +24,35 @@
             android:layout_gravity="center">
 
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_26"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="26"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_026"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_27"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="27"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_027"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_28"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="28"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_028"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_29"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="29"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_029"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_30"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="30"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_030"
+
                 />
 
 
@@ -73,45 +66,35 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_31"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="31"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_031"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="32"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_032"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_33"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="33"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_033"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_34"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="34"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_034"
                 />
 
-            <Button
+            <ImageView
 
                 android:id="@+id/btcp1_35"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="35"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_035"
                 />
 
         </LinearLayout>
@@ -124,45 +107,35 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_36"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="36"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_036"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_37"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="37"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_037"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_38"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="38"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_038"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_39"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="39"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_039"
                 />
 
-            <Button
+            <ImageView
 
                 android:id="@+id/btcp1_40"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="40"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_040"
                 />
 
         </LinearLayout>
@@ -174,45 +147,34 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_41"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="41"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_041"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_42"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="42"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_042"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_43"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="43"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_043"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_44"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="44"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_044"
                 />
 
-            <Button
-
+            <ImageView
                 android:id="@+id/btcp1_45"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="45"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_045"
                 />
 
         </LinearLayout>
@@ -224,78 +186,56 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_46"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="46"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_046"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_47"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="47"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_047"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_48"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="48"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_048"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp1_49"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="49"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_049"
                 />
 
-            <Button
+            <ImageView
 
                 android:id="@+id/btcp1_50"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="50"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_050"
                 />
 
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/num6"
-            android:layout_below="@+id/num5"
-            android:orientation="horizontal"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-            <Button
-
-                android:id="@+id/btback"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="back"
-                android:textSize="30sp"
-
-                />
-
-            <Button
-
-                android:id="@+id/bthome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home"
-                android:textSize="30sp"
-
-                />
         </LinearLayout>
 
     </RelativeLayout>
+    <ImageView
 
+        android:id="@+id/bthome"
+        style="@style/bt_hnb"
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_home"
+
+        />
+
+    <ImageView
+
+        android:id="@+id/btback"
+        style="@style/bt_hnb"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/ic_back"
+
+        />
 
 </FrameLayout>

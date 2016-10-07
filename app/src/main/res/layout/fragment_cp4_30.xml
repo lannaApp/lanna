@@ -2,12 +2,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background2"
-
     android:orientation="vertical"
-    android:paddingBottom="30dp"
-    android:paddingLeft="30dp"
-    android:paddingRight="30dp"
-    android:paddingTop="30dp">
+    style="@style/fl">
+
+    <FrameLayout
+        android:id="@+id/fl_write"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center">
+    </FrameLayout>
+
 
     <FrameLayout
 
@@ -21,33 +25,22 @@
             android:layout_gravity="center"
             android:src="@drawable/p4_020" />
     </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/fl_write"
-        android:layout_width="400dp"
-        android:layout_height="500dp"
-        android:layout_gravity="center">
-    </FrameLayout>
     <ImageView
         android:id="@+id/btback"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/bt_w"
         android:layout_gravity="left|top"
         android:src="@drawable/ic_back" />
 
 
     <ImageView
         android:id="@+id/btrestart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/bt_w"
         android:layout_gravity="left|bottom"
         android:src="@drawable/ic_retrun"   />
 
     <ImageView
         android:id="@+id/btsound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/bt_w"
         android:layout_gravity="right|bottom"
         android:src="@drawable/ic_speaker"  />
-
 </FrameLayout>

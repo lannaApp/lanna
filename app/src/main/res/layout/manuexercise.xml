@@ -10,7 +10,6 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_gravity="center"
         >
 
@@ -19,36 +18,31 @@
             android:id="@+id/num1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_gravity="center"
             android:orientation="horizontal">
 
 
             <ImageView
                 android:id="@+id/btchapter1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/bt_epx"
                 android:layout_marginRight="10dp"
                 android:src="@mipmap/ic_exp1" />
 
             <ImageView
                 android:id="@+id/btchapter2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/bt_epx"
                 android:layout_marginRight="10dp"
                 android:src="@mipmap/ic_exp2" />
 
 
             <ImageView
                 android:id="@+id/btchapter3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/bt_epx"
                 android:src="@mipmap/ic_exp3" />
 
             <ImageView
                 android:id="@+id/btchapter4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/bt_epx"
                 android:src="@mipmap/ic_exp4" />
 
 
@@ -60,7 +54,6 @@
             android:id="@+id/num2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:layout_below="@+id/num1"
             android:layout_centerHorizontal="true"
             android:orientation="horizontal"
@@ -69,8 +62,7 @@
 
             <ImageView
                 android:id="@+id/btback"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/bt_h"
                 android:src="@drawable/ic_home" />
 
 

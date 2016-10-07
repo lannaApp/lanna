@@ -7,7 +7,22 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    //cpall
+    <style name="bt_w">
 
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+
+    </style>
+
+    <style name="fl">
+
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">20dp</item>
+
+    </style>
     <style name="bt_main">
 
         <item name="android:layout_marginTop">30dp</item>
@@ -16,5 +31,76 @@
 
     </style>
 
+    <style name="bt_epx">
 
+        <item name="android:layout_marginTop">90dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+
+    </style>
+    // bt_home
+
+    <style name="bt_h">
+
+
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+
+    </style>
+
+    //-------------------------------------------------------------------
+    //cp1
+    <style name="bt_p1">
+
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+
+    </style>
+
+
+    // bt_cp1
+    <style name="bt_cp1">
+
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+
+    </style>
+
+    // bt_hnb
+    <style name="bt_hnb">
+
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+
+    </style>
+
+    //-------------------------------------------------------------------
+    // cp3
+    // textsize
+    <style name="tx_size3">
+
+        <item name="android:textSize">25sp</item>
+
+    </style>
+    //--------------------------------------------------------------------
+
+    // cp2
+    // textsize
+    <style name="tx_size2">
+
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_marginRight">110dp</item>
+
+    </style>
+
+    <style name="tx_size2_1">
+
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_marginRight">10dp</item>
+
+    </style>
+
+    //--------------------------------------------------------------------
 </resources>

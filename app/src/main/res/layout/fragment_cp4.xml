@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@drawable/background3"
-
+    android:background="@drawable/bg_cp41"
+    style="@style/fl"
     tools:context="com.example.a.lannav1.MainActivity">
 
 
@@ -13,6 +13,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/bt_p1"
         android:layout_gravity="center">
         <LinearLayout
 
@@ -20,48 +21,40 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
             android:layout_gravity="center">
 
 
-        <Button
-            android:id="@+id/btcp4_11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1"
-            android:textSize="30sp"
-             />
+            <ImageView
+                android:id="@+id/btcp4_11"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_001"
+                />
 
-        <Button
-            android:id="@+id/btcp4_12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2"
-            android:textSize="30sp"
-            />
 
-        <Button
-            android:id="@+id/btcp4_13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3"
-            android:textSize="30sp"
-           />
+            <ImageView
+                android:id="@+id/btcp4_12"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_002"
+                />
 
-        <Button
-            android:id="@+id/btcp4_14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4"
-            android:textSize="30sp"
-            />
+            <ImageView
+                android:id="@+id/btcp4_13"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_003"
+                />
 
-        <Button
-            android:id="@+id/btcp4_15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5"
-            android:textSize="30sp"
-            />
+            <ImageView
+                android:id="@+id/btcp4_14"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_004"
+                />
+
+            <ImageView
+                android:id="@+id/btcp4_15"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_005"
+                />
 
 
         </LinearLayout>
@@ -74,83 +67,58 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_006"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_007"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_008"
                 />
 
-            <Button
+            <ImageView
                 android:id="@+id/btcp4_19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_009"
                 />
 
-            <Button
-
+            <ImageView
                 android:id="@+id/btcp4_20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10"
-                android:textSize="30sp"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p4_010"
                 />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/num3"
-            android:layout_below="@+id/num2"
-            android:orientation="horizontal"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-
-
-
-            <Button
-
-                android:id="@+id/bthome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home"
-                android:textSize="30sp"
-
-                />
-
-            <Button
-
-                android:id="@+id/btnext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="next"
-                android:textSize="30sp"
-
-                />
-        </LinearLayout>
 
     </RelativeLayout>
 
+    <ImageView
+
+        android:id="@+id/bthome"
+        style="@style/bt_hnb"
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_home"
+
+        />
+
+    <ImageView
+
+        android:id="@+id/btnext"
+        style="@style/bt_hnb"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/ic_next"
+
+        />
 
 </FrameLayout>
 

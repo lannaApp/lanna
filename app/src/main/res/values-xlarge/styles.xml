@@ -89,7 +89,7 @@
     <style name="tx_size2">
 
         <item name="android:textSize">40sp</item>
-        <item name="android:layout_marginRight">110dp</item>
+        <item name="android:layout_marginRight">140dp</item>
 
     </style>
 

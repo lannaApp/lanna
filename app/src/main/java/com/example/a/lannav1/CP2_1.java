@@ -27,18 +27,10 @@ import java.util.ArrayList;
 public class CP2_1 extends Fragment {
 
     View mView;
-    Utils utils;
     private Paint mPaint;
     MediaPlayer mPlayer;
     private ImageView newButton;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        utils = new Utils();
-        mPaint = utils.preparePaint();
-        init();
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -83,77 +75,12 @@ public class CP2_1 extends Fragment {
             }
         });
 
-        FrameLayout layout = (FrameLayout) v.findViewById(R.id.fl_write);
-        mView = new DrawingView(getActivity());
-        layout.addView(mView, new LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.MATCH_PARENT));
-        init();
+
         mPlayer = MediaPlayer.create(getActivity(), R.raw.s2_001);
         mPlayer.start();
 
 
         return v;
-    }
-    //0xFF # FF FF FF สี
-    private void init() {
-        utils.preparePaint();
-
-    }
-
-    @Override
-    public void onPause() {
-        mPlayer.stop();
-        super.onPause();
-    }
-
-    @Override
-    public void onDestroyView() {
-        mPlayer.stop();
-        super.onDestroyView();
-    }
-
-    class DrawingView extends View {
-        private Path path;
-        private Bitmap mBitmap;
-        private Canvas mCanvas;
-
-        public DrawingView(Context context) {
-            super(context);
-            path = new Path();
-            mBitmap = Bitmap.createBitmap(300, 300, Bitmap.Config.ARGB_8888);
-            mCanvas = new Canvas(mBitmap);
-            this.setBackgroundColor(Color.TRANSPARENT);
-        }
-
-        private ArrayList<PathWithPaint> _graphics1 = new ArrayList<PathWithPaint>();
-
-        @Override
-        public boolean onTouchEvent(MotionEvent event) {
-            PathWithPaint pp = new PathWithPaint();
-            mCanvas.drawPath(path, mPaint);
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                path.moveTo(event.getX(), event.getY());
-                path.lineTo(event.getX(), event.getY());
-            } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
-                path.lineTo(event.getX(), event.getY());
-                pp.setPath(path);
-                pp.setmPaint(mPaint);
-                _graphics1.add(pp);
-            }
-            invalidate();
-            return true;
-        }
-
-        @Override
-        protected void onDraw(Canvas canvas) {
-            super.onDraw(canvas);
-            if (_graphics1.size() > 0) {
-                canvas.drawPath(
-                        _graphics1.get(_graphics1.size() - 1).getPath(),
-                        _graphics1.get(_graphics1.size() - 1).getmPaint());
-            }
-        }
     }
 
 

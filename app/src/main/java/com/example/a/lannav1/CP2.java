@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageView;
 
 
 public class CP2 extends Fragment {
@@ -21,7 +21,7 @@ public class CP2 extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private Button newButton;
+    private ImageView newImageView;
 
 
     public CP2() {
@@ -63,8 +63,8 @@ public class CP2 extends Fragment {
 
 
         //1
-        newButton = (Button) v.findViewById(R.id.btcp2_1);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_1);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -76,8 +76,8 @@ public class CP2 extends Fragment {
             }
         });
         //2
-        newButton = (Button) v.findViewById(R.id.btcp2_2);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_2);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -89,8 +89,8 @@ public class CP2 extends Fragment {
             }
         });
         //3
-        newButton = (Button) v.findViewById(R.id.btcp2_3);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_3);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -102,8 +102,8 @@ public class CP2 extends Fragment {
             }
         });
         //4
-        newButton = (Button) v.findViewById(R.id.btcp2_4);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_4);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -115,8 +115,8 @@ public class CP2 extends Fragment {
             }
         });
         //5
-        newButton = (Button) v.findViewById(R.id.btcp2_5);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_5);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -128,8 +128,8 @@ public class CP2 extends Fragment {
             }
         });
         //6
-        newButton = (Button) v.findViewById(R.id.btcp2_6);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_6);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -141,8 +141,8 @@ public class CP2 extends Fragment {
             }
         });
         //7
-        newButton = (Button) v.findViewById(R.id.btcp2_7);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_7);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -154,8 +154,8 @@ public class CP2 extends Fragment {
             }
         });
         //8
-        newButton = (Button) v.findViewById(R.id.btcp2_8);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_8);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -167,8 +167,8 @@ public class CP2 extends Fragment {
             }
         });
         //9
-        newButton = (Button) v.findViewById(R.id.btcp2_9);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_9);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -180,8 +180,8 @@ public class CP2 extends Fragment {
             }
         });
         //10
-        newButton = (Button) v.findViewById(R.id.btcp2_10);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_10);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -194,8 +194,8 @@ public class CP2 extends Fragment {
         });
 
         //11
-        newButton = (Button) v.findViewById(R.id.btcp2_11);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_11);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -207,8 +207,8 @@ public class CP2 extends Fragment {
             }
         });
         //12
-        newButton = (Button) v.findViewById(R.id.btcp2_12);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_12);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -220,8 +220,8 @@ public class CP2 extends Fragment {
             }
         });
         //13
-        newButton = (Button) v.findViewById(R.id.btcp2_13);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_13);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -233,8 +233,8 @@ public class CP2 extends Fragment {
             }
         });
         //14
-        newButton = (Button) v.findViewById(R.id.btcp2_14);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_14);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -246,8 +246,8 @@ public class CP2 extends Fragment {
             }
         });
         //15
-        newButton = (Button) v.findViewById(R.id.btcp2_15);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_15);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -259,8 +259,8 @@ public class CP2 extends Fragment {
             }
         });
         //16
-        newButton = (Button) v.findViewById(R.id.btcp2_16);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_16);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -272,8 +272,8 @@ public class CP2 extends Fragment {
             }
         });
         //17
-        newButton = (Button) v.findViewById(R.id.btcp2_17);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_17);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -285,8 +285,8 @@ public class CP2 extends Fragment {
             }
         });
         //18
-        newButton = (Button) v.findViewById(R.id.btcp2_18);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_18);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -298,8 +298,8 @@ public class CP2 extends Fragment {
             }
         });
         //19
-        newButton = (Button) v.findViewById(R.id.btcp2_19);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_19);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -311,8 +311,8 @@ public class CP2 extends Fragment {
             }
         });
         //20
-        newButton = (Button) v.findViewById(R.id.btcp2_20);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_20);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -326,8 +326,8 @@ public class CP2 extends Fragment {
 
 
         //21
-        newButton = (Button) v.findViewById(R.id.btcp2_21);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_21);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -339,8 +339,8 @@ public class CP2 extends Fragment {
             }
         });
         //22
-        newButton = (Button) v.findViewById(R.id.btcp2_22);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btcp2_22);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -351,50 +351,12 @@ public class CP2 extends Fragment {
                 transaction.commit();
             }
         });
-        //23
-        newButton = (Button) v.findViewById(R.id.btcp2_23);
-        newButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                CP2_23 cp223 = new CP2_23();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp223);
-                transaction.commit();
-            }
-        });
-        //4
-        newButton = (Button) v.findViewById(R.id.btcp2_24);
-        newButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP2_24 cp224 = new CP2_24();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp224);
-                transaction.commit();
-            }
-        });
-        //5
-        newButton = (Button) v.findViewById(R.id.btcp2_25);
-        newButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP2_25 cp225 = new CP2_25();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp225);
-                transaction.commit();
-            }
-        });
 
 
         //btnext
-        newButton = (Button) v.findViewById(R.id.btnext);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btnext);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -407,8 +369,8 @@ public class CP2 extends Fragment {
         });
 
         //bthome
-        newButton = (Button) v.findViewById(R.id.bthome);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.bthome);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

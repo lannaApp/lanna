@@ -6,7 +6,6 @@
     style="@style/fl">
 
     <FrameLayout
-        android:id="@+id/fl_write"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center">
@@ -18,7 +17,12 @@
             android:src="@drawable/p2_001" />
     </FrameLayout>
 
-
+    <FrameLayout
+        android:id="@+id/fl_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </FrameLayout>
     <ImageView
         android:id="@+id/btback"
         style="@style/bt_w"

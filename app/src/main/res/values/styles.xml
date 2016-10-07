@@ -91,7 +91,7 @@
     <style name="tx_size2">
 
         <item name="android:textSize">25sp</item>
-        <item name="android:layout_marginRight">110dp</item>
+        <item name="android:layout_marginRight">70dp</item>
 
     </style>
 

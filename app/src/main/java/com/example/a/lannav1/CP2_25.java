@@ -64,10 +64,10 @@ public class CP2_25 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                CP2 fm_cp2 = new CP2();
+                CP21 fm_cp21 = new CP21();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, fm_cp2);
+                transaction.replace(R.id.fragment_container, fm_cp21);
                 transaction.commit();
             }
         });

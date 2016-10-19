@@ -1,26 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     android:orientation="vertical"
-    android:background="@drawable/background3"
-    android:gravity="center"
-    tools:context="com.example.a.lannav1.MainActivity">
+    style="@style/fl">
 
 
-
-
-    <Button
+    <ImageView
         android:id="@+id/btback"
-        android:layout_marginTop="20dp"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="back"
-        android:textSize="30sp"
-        />
+        style="@style/bt_w"
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/btplay"
+        style="@style/bt_play"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/bt_play" />
 
 
-
-
-</LinearLayout>
+</FrameLayout>

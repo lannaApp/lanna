@@ -27,8 +27,8 @@
     <style name="bt_main">
 
         <item name="android:layout_marginTop">50dp</item>
-        <item name="android:layout_width">130dp</item>
-        <item name="android:layout_height">130dp</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">180dp</item>
 
     </style>
 
@@ -103,4 +103,48 @@
 
     </style>
     //--------------------------------------------------------------------
+    //ex1
+    <style name="ex1">
+
+        <item name="android:layout_marginTop">130dp</item>
+
+    </style>
+
+    <style name="btex1">
+
+
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_width">144dp</item>
+        <item name="android:layout_height">144dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+
+
+    </style>
+
+    //--------------------------------------------------------------------
+
+    <style name="score">
+
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">200sp</item>
+
+
+    </style>
+
+    <style name="txname">
+
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+
+
+    </style>
+
+    <style name="bt_play">
+
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+
+    </style>
 </resources>

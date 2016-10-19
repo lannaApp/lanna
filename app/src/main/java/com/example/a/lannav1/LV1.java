@@ -9,7 +9,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ImageView;
 
 
 public class LV1 extends Fragment {
@@ -21,7 +22,7 @@ public class LV1 extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private Button newButton;
+    private ImageView newImageView;
 
     public LV1() {
         // Required empty public constructor
@@ -61,9 +62,23 @@ public class LV1 extends Fragment {
         View v = inflater.inflate(R.layout.fragment_lv1, container, false);
 
 
+        //btplay
+        newImageView = (ImageView) v.findViewById(R.id.btplay);
+        newImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EX1_1 play = new EX1_1();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, play);
+                transaction.commit();
+            }
+        });
+
         //btback
-        newButton = (Button) v.findViewById(R.id.btback);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btback);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

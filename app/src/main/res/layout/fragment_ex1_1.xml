@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ex1_1"
+    android:orientation="vertical"
+    style="@style/fl">
+
+
+    <ImageView
+        android:id="@+id/btback"
+        style="@style/bt_w"
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_back" />
+
+      <LinearLayout
+            style="@style/ex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/btex1_3"
+                style="@style/btex1"
+                android:src="@drawable/btex1_17" />
+
+            <ImageView
+                android:id="@+id/btex1_2"
+                style="@style/btex1"
+                android:src="@drawable/btex1_27" />
+
+
+            <ImageView
+                android:id="@+id/btex1_1"
+                style="@style/btex1"
+                android:src="@drawable/btex1_7" />
+
+            <ImageView
+                android:id="@+id/btex1_4"
+                style="@style/btex1"
+                android:src="@drawable/btex1_37" />
+
+
+        </LinearLayout>
+
+
+
+
+
+</FrameLayout>

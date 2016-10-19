@@ -9,17 +9,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageView;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link LV3.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link LV3#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class LV3 extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,7 +22,7 @@ public class LV3 extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private Button newButton;
+    private ImageView newImageView;
 
     public LV3() {
         // Required empty public constructor
@@ -70,8 +63,8 @@ public class LV3 extends Fragment {
 
 
         //btback
-        newButton = (Button) v.findViewById(R.id.btback);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        newImageView = (ImageView) v.findViewById(R.id.btback);
+        newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

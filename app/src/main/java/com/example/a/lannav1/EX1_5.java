@@ -72,7 +72,8 @@ public class EX1_5 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                EX1_true ext = new EX1_true();
+
+                EX1_true ext = EX1_true.newInstance("5",mParam2);
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.replace(R.id.fragment_container, ext);
@@ -86,7 +87,7 @@ public class EX1_5 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                EX1_false exf = new EX1_false();
+                EX1_false exf = EX1_false.newInstance("5",mParam2);
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.replace(R.id.fragment_container, exf);
@@ -100,7 +101,7 @@ public class EX1_5 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                EX1_false exf = new EX1_false();
+                EX1_false exf = EX1_false.newInstance("5",mParam2);
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.replace(R.id.fragment_container, exf);
@@ -114,7 +115,7 @@ public class EX1_5 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                EX1_false exf = new EX1_false();
+                EX1_false exf = EX1_false.newInstance("5",mParam2);
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.replace(R.id.fragment_container, exf);
@@ -135,7 +136,6 @@ public class EX1_5 extends Fragment {
                 transaction.commit();
             }
         });
-
 
 
 

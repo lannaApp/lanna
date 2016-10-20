@@ -25,6 +25,8 @@ public class EX1_false extends Fragment {
 
 
     private ImageView newImageView;
+    private double total;
+    private int show;
 
     public EX1_false() {
         // Required empty public constructor
@@ -64,20 +66,239 @@ public class EX1_false extends Fragment {
         View v = inflater.inflate(R.layout.fragment_ex1_false, container, false);
 
 
-        newImageView = (ImageView) v.findViewById(R.id.btonclick);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
 
-                EX1_2 ex12 = new EX1_2();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, ex12);
-                transaction.commit();
+
+
+        if (mParam1 == "1") {
+
+            newImageView = (ImageView) v.findViewById(R.id.btonclick);
+            newImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    EX1_2 ex = EX1_2.newInstance(mParam1,mParam2);
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, ex);
+                    transaction.commit();
+
+                }
+            });
+
+        } else if (mParam1 == "2") {
+
+            newImageView = (ImageView) v.findViewById(R.id.btonclick);
+            newImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    EX1_3 ex = EX1_3.newInstance(mParam1,mParam2);
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, ex);
+                    transaction.commit();
+
+                }
+            });
+
+
+        } else if (mParam1 == "3") {
+
+            newImageView = (ImageView) v.findViewById(R.id.btonclick);
+            newImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    EX1_4 ex = EX1_4.newInstance(mParam1,mParam2);
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, ex);
+                    transaction.commit();
+
+                }
+            });
+
+
+        } else if (mParam1 == "4") {
+
+            newImageView = (ImageView) v.findViewById(R.id.btonclick);
+            newImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    EX1_5 ex = EX1_5.newInstance(mParam1,mParam2);
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, ex);
+                    transaction.commit();
+
+                }
+            });
+
+
+        } else if (mParam1 == "5") {
+
+            newImageView = (ImageView) v.findViewById(R.id.btonclick);
+            newImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    EX1_6 ex = EX1_6.newInstance(mParam1,mParam2);
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, ex);
+                    transaction.commit();
+
+                }
+            });
+
+
+        } else if (mParam1 == "6") {
+
+            newImageView = (ImageView) v.findViewById(R.id.btonclick);
+            newImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    EX1_7 ex = EX1_7.newInstance(mParam1,mParam2);
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, ex);
+                    transaction.commit();
+
+                }
+            });
+
+
+        } else if (mParam1 == "7") {
+
+            newImageView = (ImageView) v.findViewById(R.id.btonclick);
+            newImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    EX1_8 ex = EX1_8.newInstance(mParam1,mParam2);
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, ex);
+                    transaction.commit();
+
+                }
+            });
+
+
+        } else if (mParam1 == "8") {
+
+            newImageView = (ImageView) v.findViewById(R.id.btonclick);
+            newImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    EX1_9 ex = EX1_9.newInstance(mParam1,mParam2);
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, ex);
+                    transaction.commit();
+
+                }
+            });
+
+
+        } else if (mParam1 == "9") {
+
+            newImageView = (ImageView) v.findViewById(R.id.btonclick);
+            newImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    EX1_10 ex = EX1_10.newInstance(mParam1,mParam2);
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, ex);
+                    transaction.commit();
+
+                }
+            });
+
+
+        } else if (mParam1 == "10") {
+
+
+            total=Double.parseDouble(mParam2);
+
+            show= (int) Math.log10(total);
+
+            if (show < 4) {
+
+                mParam1= String.valueOf(show);
+
+                newImageView = (ImageView) v.findViewById(R.id.btonclick);
+                newImageView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+
+
+                        EX1_end ex = EX1_end.newInstance(mParam1, mParam2);
+                        FragmentManager manager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction transaction = manager.beginTransaction();
+                        transaction.replace(R.id.fragment_container, ex);
+                        transaction.commit();
+
+                    }
+                });
+            }else if (show < 8){
+
+                mParam1= String.valueOf(show);
+
+                newImageView = (ImageView) v.findViewById(R.id.btonclick);
+                newImageView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+
+                        EX1_end1 ex = EX1_end1.newInstance(mParam1, mParam2);
+                        FragmentManager manager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction transaction = manager.beginTransaction();
+                        transaction.replace(R.id.fragment_container, ex);
+                        transaction.commit();
+
+                    }
+                });
+
+            }else {
+
+                mParam1= String.valueOf(show);
+
+                newImageView = (ImageView) v.findViewById(R.id.btonclick);
+                newImageView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+
+
+                        EX1_end2 ex = EX1_end2.newInstance(mParam1, mParam2);
+                        FragmentManager manager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction transaction = manager.beginTransaction();
+                        transaction.replace(R.id.fragment_container, ex);
+                        transaction.commit();
+
+                    }
+                });
 
             }
-        });
+
+        }
 
 
         return v;

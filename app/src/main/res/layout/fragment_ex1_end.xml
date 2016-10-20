@@ -13,7 +13,7 @@
         android:src="@drawable/bt_ok" />
 
     <TextView
-
+        android:id="@+id/sc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -28,6 +28,7 @@
     android:id="@+id/nameuser"
     android:background="@color/colorWhite"
     style="@style/txname"
+    android:selectAllOnFocus="true"
     />
 
 

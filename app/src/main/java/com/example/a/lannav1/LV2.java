@@ -62,6 +62,21 @@ public class LV2 extends Fragment {
         View v = inflater.inflate(R.layout.fragment_lv2, container, false);
 
 
+        //btplay
+        newImageView = (ImageView) v.findViewById(R.id.btplay);
+        newImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EX2_1 play = new EX2_1();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, play);
+                transaction.commit();
+            }
+        });
+
+
         //btback
         newImageView = (ImageView) v.findViewById(R.id.btback);
         newImageView.setOnClickListener(new View.OnClickListener() {

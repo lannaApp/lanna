@@ -72,10 +72,6 @@ public class EX1_2 extends Fragment {
             @Override
             public void onClick(View v) {
 
-    if (mParam1 == mParam2){
-
-      mParam2="2";
-    }
                 EX1_true ext = EX1_true.newInstance("2", mParam2);
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();

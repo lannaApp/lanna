@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -32,17 +33,28 @@ public class CP1_1 extends Fragment {
     MediaPlayer mPlayer;
     private ImageView newButton;
 
+
+
+
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         utils = new Utils();
         mPaint = utils.preparePaint();
         init();
+
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_cp1_1, container, false);
+
+
+
 
         //restart
         newButton = (ImageView) v.findViewById(R.id.btrestart);

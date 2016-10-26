@@ -391,6 +391,19 @@ public class CP11 extends Fragment {
             }
         });
 
+        //btnext
+        newImageView = (ImageView) v.findViewById(R.id.btnext);
+        newImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CP111 cp111 = new CP111();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, cp111);
+                transaction.commit();
+            }
+        });
 
         //btback
         newImageView = (ImageView) v.findViewById(R.id.btback);

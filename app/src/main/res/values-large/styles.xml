@@ -106,16 +106,83 @@
     //ex1
     <style name="ex1">
 
-        <item name="android:layout_marginTop">130dp</item>
+        <item name="android:layout_marginTop">120dp</item>
 
     </style>
 
     <style name="btex1">
 
 
-        <item name="android:layout_marginTop">50dp</item>
-        <item name="android:layout_width">144dp</item>
-        <item name="android:layout_height">144dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+
+
+    </style>
+
+    //--------------------------------------------------------------------
+    //ex2
+    <style name="ex2">
+
+        <item name="android:layout_marginTop">130dp</item>
+
+    </style>
+
+    <style name="bt2box">
+
+
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">250dp</item>
+
+    </style>
+
+    <style name="btex2">
+
+
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+
+
+    </style>
+
+    //--------------------------------------------------------------------
+    //ex3
+    <style name="ex3">
+
+        <item name="android:layout_marginTop">110dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+
+    </style>
+
+    <style name="btex3">
+
+
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+
+
+    </style>
+
+    //--------------------------------------------------------------------
+    //ex4
+    <style name="ex4">
+
+        <item name="android:layout_marginTop">120dp</item>
+
+    </style>
+
+    <style name="btex4">
+
+
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
         <item name="android:layout_marginRight">20dp</item>
 
 

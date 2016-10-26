@@ -238,4 +238,13 @@
 
         />
 
+    <ImageView
+
+        android:id="@+id/btnext"
+        style="@style/bt_hnb"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/ic_next"
+
+        />
+
 </FrameLayout>

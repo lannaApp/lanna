@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_cp111"
+    style="@style/fl"
+    android:gravity="center"
+    tools:context="com.example.a.lannav1.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/bt_p1"
+        android:layout_gravity="center">
+        <LinearLayout
+
+            android:id="@+id/num1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:id="@+id/btcp1_51"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_026"
+                />
+
+            <ImageView
+                android:id="@+id/btcp1_27"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_027"
+                />
+
+            <ImageView
+                android:id="@+id/btcp1_28"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_028"
+                />
+
+            <ImageView
+                android:id="@+id/btcp1_29"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_029"
+                />
+
+            <ImageView
+                android:id="@+id/btcp1_30"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_030"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/num2"
+            android:layout_below="@id/num1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/btcp1_31"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_031"
+                />
+
+            <ImageView
+                android:id="@+id/btcp1_32"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_032"
+                />
+
+            <ImageView
+                android:id="@+id/btcp1_33"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_033"
+                />
+
+            <ImageView
+                android:id="@+id/btcp1_34"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_034"
+                />
+
+            <ImageView
+
+                android:id="@+id/btcp1_35"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_035"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/num3"
+            android:layout_below="@id/num2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/btcp1_36"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_036"
+                />
+
+            <ImageView
+                android:id="@+id/btcp1_37"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_037"
+                />
+
+            <ImageView
+                android:id="@+id/btcp1_38"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_038"
+                />
+
+            <ImageView
+                android:id="@+id/btcp1_39"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_039"
+                />
+
+            <ImageView
+
+                android:id="@+id/btcp1_40"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_040"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/num4"
+            android:layout_below="@id/num3"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/btcp1_41"
+                style="@style/bt_cp1"
+                android:src="@mipmap/p1_041"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+
+        android:id="@+id/bthome"
+        style="@style/bt_hnb"
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_home"
+
+        />
+
+    <ImageView
+
+        android:id="@+id/btback"
+        style="@style/bt_hnb"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/ic_back"
+
+        />
+
+</FrameLayout>

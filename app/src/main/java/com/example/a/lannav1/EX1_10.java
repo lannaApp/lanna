@@ -72,7 +72,7 @@ public class EX1_10 extends Fragment {
             public void onClick(View v) {
 
 
-                EX1_true ext = EX1_true.newInstance("10",mParam2);
+                EX1_true ext = EX1_true.newInstance("10",mParam2+"0");
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.replace(R.id.fragment_container, ext);

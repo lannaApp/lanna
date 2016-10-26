@@ -61,6 +61,19 @@ public class LV3 extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_lv3, container, false);
 
+        //btplay
+        newImageView = (ImageView) v.findViewById(R.id.btplay);
+        newImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EX3_1 play = new EX3_1();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, play);
+                transaction.commit();
+            }
+        });
 
         //btback
         newImageView = (ImageView) v.findViewById(R.id.btback);

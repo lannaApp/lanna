@@ -27,31 +27,31 @@
             <ImageView
                 android:id="@+id/btcp1_51"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_026"
+                android:src="@mipmap/p1_051"
                 />
 
             <ImageView
-                android:id="@+id/btcp1_27"
+                android:id="@+id/btcp1_52"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_027"
+                android:src="@mipmap/p1_052"
                 />
 
             <ImageView
-                android:id="@+id/btcp1_28"
+                android:id="@+id/btcp1_53"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_028"
+                android:src="@mipmap/p1_053"
                 />
 
             <ImageView
-                android:id="@+id/btcp1_29"
+                android:id="@+id/btcp1_54"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_029"
+                android:src="@mipmap/p1_054"
                 />
 
             <ImageView
-                android:id="@+id/btcp1_30"
+                android:id="@+id/btcp1_55"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_030"
+                android:src="@mipmap/p1_055"
 
                 />
 
@@ -67,34 +67,34 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:id="@+id/btcp1_31"
+                android:id="@+id/btcp1_56"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_031"
+                android:src="@mipmap/p1_056"
                 />
 
             <ImageView
-                android:id="@+id/btcp1_32"
+                android:id="@+id/btcp1_57"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_032"
+                android:src="@mipmap/p1_057"
                 />
 
             <ImageView
-                android:id="@+id/btcp1_33"
+                android:id="@+id/btcp1_58"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_033"
+                android:src="@mipmap/p1_058"
                 />
 
             <ImageView
-                android:id="@+id/btcp1_34"
+                android:id="@+id/btcp1_59"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_034"
+                android:src="@mipmap/p1_059"
                 />
 
             <ImageView
 
-                android:id="@+id/btcp1_35"
+                android:id="@+id/btcp1_60"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_035"
+                android:src="@mipmap/p1_060"
                 />
 
         </LinearLayout>
@@ -108,34 +108,34 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:id="@+id/btcp1_36"
+                android:id="@+id/btcp1_61"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_036"
+                android:src="@mipmap/p1_061"
                 />
 
             <ImageView
-                android:id="@+id/btcp1_37"
+                android:id="@+id/btcp1_62"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_037"
+                android:src="@mipmap/p1_062"
                 />
 
             <ImageView
-                android:id="@+id/btcp1_38"
+                android:id="@+id/btcp1_63"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_038"
+                android:src="@mipmap/p1_063"
                 />
 
             <ImageView
-                android:id="@+id/btcp1_39"
+                android:id="@+id/btcp1_64"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_039"
+                android:src="@mipmap/p1_064"
                 />
 
             <ImageView
 
-                android:id="@+id/btcp1_40"
+                android:id="@+id/btcp1_65"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_040"
+                android:src="@mipmap/p1_065"
                 />
 
         </LinearLayout>
@@ -148,9 +148,9 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:id="@+id/btcp1_41"
+                android:id="@+id/btcp1_66"
                 style="@style/bt_cp1"
-                android:src="@mipmap/p1_041"
+                android:src="@mipmap/p1_066"
                 />
 
 

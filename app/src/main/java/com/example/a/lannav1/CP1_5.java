@@ -7,11 +7,13 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Point;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -31,6 +33,12 @@ public class CP1_5 extends Fragment {
     private Paint mPaint;
     MediaPlayer mPlayer;
     private ImageView newButton;
+
+    //x,y
+    Point p1 = new Point(75,292);
+    Point p2 = new Point(179,214);
+    Point p3 = new Point(279,279);
+    Point p4 = new Point(80,127);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -130,6 +138,18 @@ public class CP1_5 extends Fragment {
 
         @Override
         public boolean onTouchEvent(MotionEvent event) {
+
+            int x = (int) event.getX();
+            int y = (int) event.getY();
+            switch (event.getAction()) {
+                case MotionEvent.ACTION_DOWN:
+                    Log.d("Action Down", " "+ x + ", " + y);
+                case MotionEvent.ACTION_MOVE:
+                    Log.d("Action Move", " "+ x + ", " + y);
+                case MotionEvent.ACTION_UP:
+                    Log.d("Action Up", " "+ x + ", " + y);
+            }
+
             PathWithPaint pp = new PathWithPaint();
             mCanvas.drawPath(path, mPaint);
             if (event.getAction() == MotionEvent.ACTION_DOWN) {

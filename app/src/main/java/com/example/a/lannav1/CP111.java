@@ -62,345 +62,212 @@ public class CP111 extends Fragment {
         View v = inflater.inflate(R.layout.fragment_cp111, container, false);
 
 
-        //26
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_26);
+        //51
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_51);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_26 cp126 = new CP1_26();
+                CP1_51 cp151 = new CP1_51();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp126);
+                transaction.replace(R.id.fragment_container, cp151);
                 transaction.commit();
             }
         });
-        //27
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_27);
+        //52
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_52);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_27 cp127 = new CP1_27();
+                CP1_52 cp152 = new CP1_52();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp127);
+                transaction.replace(R.id.fragment_container, cp152);
                 transaction.commit();
             }
         });
-        //28
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_28);
+        //53
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_53);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_28 cp128 = new CP1_28();
+                CP1_53 cp153 = new CP1_53();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp128);
+                transaction.replace(R.id.fragment_container, cp153);
                 transaction.commit();
             }
         });
-        //29
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_29);
+        //54
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_54);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_29 cp129 = new CP1_29();
+                CP1_54 cp154 = new CP1_54();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp129);
+                transaction.replace(R.id.fragment_container, cp154);
                 transaction.commit();
             }
         });
-        //30
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_30);
+        //55
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_55);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_30 cp130 = new CP1_30();
+                CP1_55 cp155 = new CP1_55();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp130);
+                transaction.replace(R.id.fragment_container, cp155);
                 transaction.commit();
             }
         });
-        //31
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_31);
+        //56
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_56);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_31 cp131 = new CP1_31();
+                CP1_56 cp156 = new CP1_56();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp131);
+                transaction.replace(R.id.fragment_container, cp156);
                 transaction.commit();
             }
         });
-        //32
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_32);
+        //57
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_57);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_32 cp132 = new CP1_32();
+                CP1_57 cp157 = new CP1_57();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp132);
+                transaction.replace(R.id.fragment_container, cp157);
                 transaction.commit();
             }
         });
-        //33
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_33);
+        //58
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_58);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_33 cp133 = new CP1_33();
+                CP1_58 cp158 = new CP1_58();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp133);
+                transaction.replace(R.id.fragment_container, cp158);
                 transaction.commit();
             }
         });
-        //34
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_34);
+        //59
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_59);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_34 cp134 = new CP1_34();
+                CP1_59 cp159 = new CP1_59();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp134);
+                transaction.replace(R.id.fragment_container, cp159);
                 transaction.commit();
             }
         });
-        //35
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_35);
+        //60
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_60);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_35 cp135 = new CP1_35();
+                CP1_60 cp160 = new CP1_60();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp135);
-                transaction.commit();
-            }
-        });
-
-        //36
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_36);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_36 cp136 = new CP1_36();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp136);
-                transaction.commit();
-            }
-        });
-        //37
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_37);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_37 cp137 = new CP1_37();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp137);
-                transaction.commit();
-            }
-        });
-        //38
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_38);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_38 cp138 = new CP1_38();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp138);
-                transaction.commit();
-            }
-        });
-        //39
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_39);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_39 cp139 = new CP1_39();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp139);
-                transaction.commit();
-            }
-        });
-        //40
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_40);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_40 cp140 = new CP1_40();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp140);
-                transaction.commit();
-            }
-        });
-        //41
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_41);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_41 cp141 = new CP1_41();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp141);
-                transaction.commit();
-            }
-        });
-        //42
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_42);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_42 cp142 = new CP1_42();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp142);
-                transaction.commit();
-            }
-        });
-        //43
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_43);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_43 cp143 = new CP1_43();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp143);
-                transaction.commit();
-            }
-        });
-        //44
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_44);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_44 cp144 = new CP1_44();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp144);
-                transaction.commit();
-            }
-        });
-        //45
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_45);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_45 cp145 = new CP1_45();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp145);
+                transaction.replace(R.id.fragment_container, cp160);
                 transaction.commit();
             }
         });
 
-
-        //46
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_46);
+        //61
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_61);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_46 cp146 = new CP1_46();
+                CP1_61 cp161 = new CP1_61();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp146);
+                transaction.replace(R.id.fragment_container, cp161);
                 transaction.commit();
             }
         });
-        //47
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_47);
+        //62
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_62);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_47 cp147 = new CP1_47();
+                CP1_62 cp162 = new CP1_62();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp147);
+                transaction.replace(R.id.fragment_container, cp162);
                 transaction.commit();
             }
         });
-        //48
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_48);
+        //63
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_63);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_48 cp148 = new CP1_48();
+                CP1_63 cp163 = new CP1_63();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp148);
+                transaction.replace(R.id.fragment_container, cp163);
                 transaction.commit();
             }
         });
-        //49
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_49);
+        //64
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_64);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_49 cp149 = new CP1_49();
+                CP1_64 cp164 = new CP1_64();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp149);
+                transaction.replace(R.id.fragment_container, cp164);
                 transaction.commit();
             }
         });
-        //50
-        newImageView = (ImageView) v.findViewById(R.id.btcp1_50);
+        //65
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_65);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP1_50 cp150 = new CP1_50();
+                CP1_65 cp165 = new CP1_65();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp150);
+                transaction.replace(R.id.fragment_container, cp165);
                 transaction.commit();
             }
         });
-
-        //btnext
-        newImageView = (ImageView) v.findViewById(R.id.btnext);
+        //66
+        newImageView = (ImageView) v.findViewById(R.id.btcp1_66);
         newImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                CP111 cp111 = new CP111();
+                CP1_66 cp166 = new CP1_66();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp111);
+                transaction.replace(R.id.fragment_container, cp166);
                 transaction.commit();
             }
         });
@@ -411,10 +278,10 @@ public class CP111 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                CP1 cp1 = new CP1();
+                CP11 cp11 = new CP11();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, cp1);
+                transaction.replace(R.id.fragment_container, cp11);
                 transaction.commit();
             }
         });

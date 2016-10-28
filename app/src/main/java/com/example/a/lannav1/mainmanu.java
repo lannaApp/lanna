@@ -27,8 +27,10 @@ public class mainmanu extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String getnameuser;
-    private ImageView newButton;
+    private ImageView pracButton;
     private TextView tvnameuset;
+    private ImageView rankButton;
+    private ImageView gameButton;
 
 
     public mainmanu() {
@@ -62,8 +64,8 @@ public class mainmanu extends Fragment {
 
 
         //btexercise
-        newButton = (ImageView)v.findViewById(R.id.btexercise);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        pracButton = (ImageView)v.findViewById(R.id.btexercise);
+        pracButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -77,8 +79,8 @@ public class mainmanu extends Fragment {
 
 
         //btgametest
-        newButton = (ImageView)v.findViewById(R.id.btgametest);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        gameButton = (ImageView)v.findViewById(R.id.btgametest);
+        gameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -92,8 +94,8 @@ public class mainmanu extends Fragment {
 
 
         //btback
-        newButton = (ImageView) v.findViewById(R.id.btrank);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        rankButton = (ImageView) v.findViewById(R.id.btrank);
+        rankButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -104,7 +106,6 @@ public class mainmanu extends Fragment {
                 transaction.commit();
             }
         });
-
 
         return v;
     }

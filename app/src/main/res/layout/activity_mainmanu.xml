@@ -24,11 +24,8 @@
         />
 
     <ImageView
-
         android:id="@+id/btrank"
         android:src="@mipmap/ic_rank"
         style="@style/bt_main"
         />
-
-
 </LinearLayout>

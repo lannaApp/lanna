@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_centerVertical="true"
     android:background="@drawable/bg_cp_1"
-    tools:context="com.example.a.lannav1.MainActivity">
+    tools:context="com.example.a.lanna.MainActivity">
 
     <RelativeLayout
         android:layout_width="wrap_content"

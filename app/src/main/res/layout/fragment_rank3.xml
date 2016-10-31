@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sc4"
+    android:orientation="vertical"
+    style="@style/fl">
+
+
+    <ImageView
+        android:id="@+id/bthome"
+        style="@style/bt_w"
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_home" />
+
+
+    <ImageView
+        android:id="@+id/btback"
+        style="@style/bt_w"
+        android:layout_gravity="center|left"
+        android:src="@mipmap/ic_back1" />
+
+    <RelativeLayout
+        style="@style/masc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

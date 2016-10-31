@@ -7,7 +7,7 @@
     android:background="@drawable/bg_cp111"
     style="@style/fl"
     android:gravity="center"
-    tools:context="com.example.a.lannav1.MainActivity">
+    tools:context="com.example.a.lanna.MainActivity">
 
 
     <RelativeLayout

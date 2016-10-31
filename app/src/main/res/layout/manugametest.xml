@@ -6,7 +6,7 @@
     android:background="@drawable/bg_lv_1"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.example.a.lannav1.MainActivity">
+    tools:context="com.example.a.lanna.MainActivity">
 
     <RelativeLayout
         android:layout_width="wrap_content"

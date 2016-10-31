@@ -7,6 +7,35 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+
+    <style name="masc">
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+        <item name="android:layout_marginLeft">100dp</item>
+
+
+    </style>
+
+    <style name="txscore">
+
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+
+    <style name="txnamescore">
+
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+
+
     //cpall
     <style name="bt_w">
 
@@ -170,15 +199,15 @@
     //ex4
     <style name="ex4">
 
-        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
 
     </style>
 
     <style name="btex4">
 
-        <item name="android:layout_width">80dp</item>
-        <item name="android:layout_height">80dp</item>
-        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">60dp</item>
 
 
     </style>

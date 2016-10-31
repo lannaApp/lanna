@@ -1,7 +1,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ex1_1"
+    android:background="@drawable/ex4_8"
     android:orientation="vertical"
     style="@style/fl">
 
@@ -23,23 +23,23 @@
         <ImageView
             android:id="@+id/btex4_1"
             style="@style/btex4"
-            android:src="@drawable/btex1_17" />
+            android:src="@drawable/btex4_8_1" />
 
         <ImageView
             android:id="@+id/btex4_3"
             style="@style/btex4"
-            android:src="@drawable/btex1_27" />
+            android:src="@drawable/btex4_8_3" />
 
 
         <ImageView
             android:id="@+id/btex4_2"
             style="@style/btex4"
-            android:src="@drawable/btex1_7" />
+            android:src="@drawable/btex4_8_2" />
 
         <ImageView
             android:id="@+id/btex4_4"
             style="@style/btex4"
-            android:src="@drawable/btex1_37" />
+            android:src="@drawable/btex4_8_4" />
 
 
     </LinearLayout>

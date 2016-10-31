@@ -6,7 +6,7 @@
     android:gravity="center"
     android:background="@drawable/bg_cp41"
     style="@style/fl"
-    tools:context="com.example.a.lannav1.MainActivity">
+    tools:context="com.example.a.lanna.MainActivity">
 
 
 

@@ -7,6 +7,7 @@ package com.example.a.lanna;
 public class Score {
     String name;
     String score;
+
     public String getName() {
         return name;
     }

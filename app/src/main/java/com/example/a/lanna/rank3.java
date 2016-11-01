@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class rank3 extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -23,6 +26,9 @@ public class rank3 extends Fragment {
     private ImageView backButton;
     private listview_row adapter;
     private ImageView homeButton;
+    private List<Score> score;
+    private List<Score> name;
+
 
 
     public rank3() {
@@ -56,13 +62,13 @@ public class rank3 extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        String[] nameUser = { "เจ", "กอล์ฟ", "นก", "แทน", "ชล"
-                , "หนึ่ง", "Sephiroth", "Tifa", "Vincent ", "Yuffie "};
+        DatabaseHandler db = new DatabaseHandler(getActivity());
 
-        String[] score = { "1" , "2" , "3" , "4" , "5"
-                , "6" , "7" , "8" , "9" , "10" };
+        name = db.getscore1();
+        score = db.getscore1();
 
-        adapter = new listview_row(this.getActivity(), nameUser, score);
+
+        adapter = new listview_row(this.getActivity(), name, score);
 
 
 

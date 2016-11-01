@@ -8,13 +8,16 @@ import android.content.Context;
         import android.widget.BaseAdapter;
         import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class listview_row  extends BaseAdapter {
 
     Context mContext;
-    String[] strName;
-    String[] score;
+    List<Score> strName;
+    List<Score> score;
 
-    public listview_row(Context context, String[] strName, String[] score) {
+    public listview_row(Context context, List<Score> strName, List<Score> score) {
 
         this.mContext = context;
         this.strName = strName;
@@ -22,7 +25,7 @@ public class listview_row  extends BaseAdapter {
     }
 
     public int getCount() {
-        return strName.length;
+        return strName.size();
     }
 
     public Object getItem(int arg0) {
@@ -40,10 +43,11 @@ public class listview_row  extends BaseAdapter {
         View row = mInflater.inflate(R.layout.fragment_listview_row, parent, false);
 
         TextView textView = (TextView)row.findViewById(R.id.textView1);
-        textView.setText(strName[position]);
+        textView.setText(strName.get(position).toString());
 
         TextView textView2 = (TextView)row.findViewById(R.id.textView2);
-        textView2.setText(score[position]);
+        textView2.setText(score.get(position).toString());
+
         return row;
 
     }

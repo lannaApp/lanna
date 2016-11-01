@@ -9,6 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.a.lanna.CP1.CP1;
+import com.example.a.lanna.CP2.CP2;
+import com.example.a.lanna.CP3.CP3;
+import com.example.a.lanna.CP4.CP4;
+
 
 public class FmExercise extends Fragment {
     // TODO: Rename parameter arguments, choose names that match

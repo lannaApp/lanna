@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.a.lanna.EX3.EX3_1;
 
 
 public class LV3 extends Fragment {

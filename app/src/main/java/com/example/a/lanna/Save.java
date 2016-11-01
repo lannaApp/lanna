@@ -73,6 +73,12 @@ public class Save extends Fragment {
         }
 
 
+        DatabaseHandler db = new DatabaseHandler(getActivity());
+
+        db.addScore1(mParam1, Integer.valueOf(mParam2));
+
+
+
     }
 
     @Override

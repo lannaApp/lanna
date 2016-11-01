@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.a.lanna.EX1.EX1_1;
+
 
 public class LV1 extends Fragment {
     // TODO: Rename parameter arguments, choose names that match

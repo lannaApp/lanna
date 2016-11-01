@@ -216,6 +216,7 @@
 
     <style name="txname">
 
+        <item name="android:maxLines">1</item>
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:layout_width">150dp</item>
         <item name="android:layout_height">30dp</item>

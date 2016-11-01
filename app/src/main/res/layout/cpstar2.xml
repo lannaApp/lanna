@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/star2"
+    android:orientation="vertical"
+    style="@style/fl">
+
+
+
+
+    <ImageView
+        android:id="@+id/btrestart"
+        style="@style/bt_w"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/ic_retrun"   />
+
+    <ImageView
+        android:id="@+id/bthome"
+        style="@style/bt_w"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/ic_home"  />
+
+</FrameLayout>

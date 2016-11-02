@@ -23,13 +23,14 @@
         />
 
     <EditText
-
         android:layout_gravity="center|bottom"
         android:id="@+id/nameuser"
         android:background="@color/colorWhite"
         style="@style/txname"
         android:selectAllOnFocus="true"
-        />
+        android:maxLines="1"
+        android:ems="1"
+        android:inputType="text"/>
 
 
 

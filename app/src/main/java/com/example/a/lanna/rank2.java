@@ -31,6 +31,7 @@ public class rank2 extends Fragment {
     private ImageView nextButton;
     private List<Score> score;
     private List<Score> name;
+    private ScoreAdapter scoreAdapter;
 
 
     public rank2() {
@@ -65,14 +66,8 @@ public class rank2 extends Fragment {
         }
 
 
-        DatabaseHandler db = new DatabaseHandler(getActivity());
-
-        name = db.getscore1();
-        score = db.getscore1();
-
-
-        adapter = new listview_row(this.getActivity(), name, score);
-
+        DatabaseHandler db = new DatabaseHandler(this.getActivity());
+        scoreAdapter = new ScoreAdapter(this.getActivity(),db.getscore3());
 
 
     }
@@ -87,7 +82,7 @@ public class rank2 extends Fragment {
 
 
         ListView listView = (ListView)v.findViewById(R.id.listView1);
-        listView.setAdapter(adapter);
+        listView.setAdapter(scoreAdapter);
 
 
         //bthome

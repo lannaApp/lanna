@@ -38,7 +38,7 @@ public class ScoreAdapter extends BaseAdapter{
                 (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         if(view == null)
-            view = mInflater.inflate(R.layout.listview_row, parent, false);
+            view = mInflater.inflate(R.layout.fragment_listview_row, parent, false);
 
         TextView nameText = (TextView)view.findViewById(R.id.textName);
         nameText.setText(scores.get(position).getName());

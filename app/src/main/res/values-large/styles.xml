@@ -16,20 +16,26 @@
 
     </style>
 
+    <style name="scview">
+
+        <item name="android:layout_marginRight">60dp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+
+    </style>
+
     <style name="txscore">
 
-           <item name="android:textSize">40sp</item>
-        <item name="android:layout_width">600dp</item>
-        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">40sp</item>
         <item name="android:textColor">#ffffff</item>
 
     </style>
 
     <style name="txnamescore">
 
+
         <item name="android:textSize">40sp</item>
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#ffffff</item>
 
     </style>

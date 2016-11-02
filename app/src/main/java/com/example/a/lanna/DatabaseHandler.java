@@ -164,80 +164,80 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return scoreList;
     }
 
-//    public List<Score> getscore2() {
-//        List<Score> scoreList = new ArrayList<Score>();
-//
-//        // Select All Query
-//        String selectQuery = " SELECT  TOP 50 * FROM score2 ORDER BY score DESC ";
-//
-//        SQLiteDatabase db = this.getWritableDatabase();
-//        Cursor cursor = db.rawQuery(selectQuery, null);
-//
-//        // looping through all rows and adding to list
-//        if (cursor.moveToFirst()) {
-//            do {
-//                Score sc = new Score();
-//                sc.setName(cursor.getString(1));
-//                sc.setScore(cursor.getString(2));
-//
-//                // Adding contact to list
-//                scoreList.add(sc);
-//            } while (cursor.moveToNext());
-//        }
-//
-//        // return contact list
-//        return scoreList;
-//    }
-//
-//    public List<Score> getscore3() {
-//        List<Score> scoreList = new ArrayList<Score>();
-//
-//        // Select All Query
-//        String selectQuery = " SELECT  TOP 50 * FROM score3 ORDER BY score DESC ";
-//
-//        SQLiteDatabase db = this.getWritableDatabase();
-//        Cursor cursor = db.rawQuery(selectQuery, null);
-//
-//        // looping through all rows and adding to list
-//        if (cursor.moveToFirst()) {
-//            do {
-//                Score sc = new Score();
-//                sc.setName(cursor.getString(1));
-//                sc.setScore(cursor.getString(2));
-//
-//                // Adding contact to list
-//                scoreList.add(sc);
-//            } while (cursor.moveToNext());
-//        }
-//
-//        // return contact list
-//        return scoreList;
-//    }
-//
-//    public List<Score> getscore4() {
-//        List<Score> scoreList = new ArrayList<Score>();
-//
-//        // Select All Query
-//        String selectQuery = " SELECT  TOP 50 * FROM score4 ORDER BY score DESC ";
-//
-//        SQLiteDatabase db = this.getWritableDatabase();
-//        Cursor cursor = db.rawQuery(selectQuery, null);
-//
-//        // looping through all rows and adding to list
-//        if (cursor.moveToFirst()) {
-//            do {
-//                Score sc = new Score();
-//                sc.setName(cursor.getString(1));
-//                sc.setScore(cursor.getString(2));
-//
-//                // Adding contact to list
-//                scoreList.add(sc);
-//            } while (cursor.moveToNext());
-//        }
-//
-//        // return contact list
-//        return scoreList;
-//    }
+    public List<Score> getscore2() {
+        List<Score> scoreList = new ArrayList<Score>();
+
+        // Select All Query
+        String selectQuery = " SELECT * FROM score2 ORDER BY score DESC LIMIT 50";
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                Score sc = new Score();
+                sc.setName(cursor.getString(1));
+                sc.setScore(cursor.getString(2));
+
+                // Adding contact to list
+                scoreList.add(sc);
+            } while (cursor.moveToNext());
+        }
+
+        // return contact list
+        return scoreList;
+    }
+
+    public List<Score> getscore3() {
+        List<Score> scoreList = new ArrayList<Score>();
+
+        // Select All Query
+        String selectQuery = " SELECT * FROM score3 ORDER BY score DESC LIMIT 50";
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                Score sc = new Score();
+                sc.setName(cursor.getString(1));
+                sc.setScore(cursor.getString(2));
+
+                // Adding contact to list
+                scoreList.add(sc);
+            } while (cursor.moveToNext());
+        }
+
+        // return contact list
+        return scoreList;
+    }
+
+    public List<Score> getscore4() {
+        List<Score> scoreList = new ArrayList<Score>();
+
+        // Select All Query
+        String selectQuery = " SELECT * FROM score4 ORDER BY score DESC LIMIT 50";
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                Score sc = new Score();
+                sc.setName(cursor.getString(1));
+                sc.setScore(cursor.getString(2));
+
+                // Adding contact to list
+                scoreList.add(sc);
+            } while (cursor.moveToNext());
+        }
+
+        // return contact list
+        return scoreList;
+    }
 
 //
 //    // Getting single contact

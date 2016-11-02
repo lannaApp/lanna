@@ -7,10 +7,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.a.lanna.FmGametest;
 import com.example.a.lanna.R;
 
 
@@ -24,6 +24,8 @@ public class EX2_end1 extends Fragment {
     private String mParam1;
     private String mParam2;
     private ImageView newImageView;
+    private EditText setname;
+    private String getname;
 
     public EX2_end1() {
         // Required empty public constructor
@@ -63,8 +65,12 @@ public class EX2_end1 extends Fragment {
         View v = inflater.inflate(R.layout.fragment_ex2_end1, container, false);
 
 
+
         TextView textView = (TextView) v.findViewById(R.id.sc);
         textView.setText(mParam1);
+
+        setname = (EditText) v.findViewById(R.id.nameuser);
+
 
         //btok
         newImageView = (ImageView) v.findViewById(R.id.btok);
@@ -72,11 +78,18 @@ public class EX2_end1 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                FmGametest fmGametest = new FmGametest();
+                getname = setname.getText().toString();
+                System.out.println(mParam1);
+                System.out.println(getname);
+
+                Save2 save = Save2.newInstance(getname, mParam1);
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, fmGametest);
+                transaction.replace(R.id.fragment_container, save);
                 transaction.commit();
+
+
+
             }
         });
 

@@ -24,7 +24,6 @@ public class Fmrank extends Fragment {
     private String mParam1;
     private String mParam2;
     private ImageView backButton;
-    private listview_row adapter;
     private ImageView nextButton;
     private List<Score> name;
     private List<Score> score;
@@ -65,9 +64,6 @@ public class Fmrank extends Fragment {
         DatabaseHandler db = new DatabaseHandler(this.getActivity());
         scoreAdapter = new ScoreAdapter(this.getActivity(),db.getscore1());
 
-        name = db.getscore1();
-        score = db.getscore1();
-
 
 
     }
@@ -82,7 +78,7 @@ public class Fmrank extends Fragment {
 
 
         ListView listView = (ListView)v.findViewById(R.id.listView1);
-        listView.setAdapter(adapter);
+        listView.setAdapter(scoreAdapter);
 
 
         //btback

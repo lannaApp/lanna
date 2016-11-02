@@ -9,20 +9,11 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.ImageView;
-
 
 import com.example.a.lanna.DatabaseHandler;
 import com.example.a.lanna.FmGametest;
-import com.example.a.lanna.MyPreference;
 import com.example.a.lanna.R;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
-
-import static com.example.a.lanna.R.id.nameuser;
 
 
 public class Save4 extends Fragment {
@@ -36,14 +27,6 @@ public class Save4 extends Fragment {
     private String mParam2;
     private ImageView newImageView;
 
-    private MyPreference myPreference;
-    private ArrayList<String> setname;
-    private ArrayList<String> setscore;
-    private Set<String> savescore;
-    private Set<String> savename;
-
-
-
     public Save4() {
         // Required empty public constructor
     }
@@ -54,11 +37,11 @@ public class Save4 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Save.
+     * @return A new instance of fragment Save4.
      */
     // TODO: Rename and change types and number of parameters
-    public static com.example.a.lanna.Save newInstance(String param1, String param2) {
-        com.example.a.lanna.Save fragment = new com.example.a.lanna.Save();
+    public static Save4 newInstance(String param1, String param2) {
+        Save4 fragment = new Save4();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,52 +51,46 @@ public class Save4 extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
-        myPreference = new MyPreference(getActivity());
-
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+            DatabaseHandler db = new DatabaseHandler(getActivity());
+
+            db.addScore4(mParam1, Integer.valueOf(mParam2));
+
+        }
 
 
-        DatabaseHandler db = new DatabaseHandler(getActivity());
-
-        db.addScore4(mParam1, Integer.valueOf(mParam2));
 
 
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                Bundle savedInstanceState) {
+            // Inflate the layout for this fragment
+            View v = inflater.inflate(R.layout.fragment_save, container, false);
 
+
+
+            newImageView = (ImageView) v.findViewById(R.id.btonclick);
+            newImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    FmGametest fmGametest = new FmGametest();
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, fmGametest);
+                    transaction.commit();
+
+                }
+            });
+
+
+
+            return v;
+        }
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_save, container, false);
-
-
-
-        newImageView = (ImageView) v.findViewById(R.id.btonclick);
-        newImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-                FmGametest fmGametest = new FmGametest();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, fmGametest);
-                transaction.commit();
-
-            }
-        });
-
-
-
-        return v;
-    }
-
-
-
-}

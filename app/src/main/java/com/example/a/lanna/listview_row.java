@@ -42,10 +42,10 @@ public class listview_row  extends BaseAdapter {
 
         View row = mInflater.inflate(R.layout.fragment_listview_row, parent, false);
 
-        TextView textView = (TextView)row.findViewById(R.id.textView1);
+        TextView textView = (TextView)row.findViewById(R.id.textName);
         textView.setText(strName.get(position).toString());
 
-        TextView textView2 = (TextView)row.findViewById(R.id.textView2);
+        TextView textView2 = (TextView)row.findViewById(R.id.textScore);
         textView2.setText(score.get(position).toString());
 
         return row;

@@ -1,6 +1,7 @@
 package com.example.a.lanna.CP4;
 
 
+import android.graphics.Point;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import java.util.ArrayList;
@@ -34,6 +35,11 @@ public class CP4_18 extends Fragment {
     MediaPlayer mPlayer;
     private ImageView newButton;
     private Utils utils;
+
+    Point p1 = new Point(179,145);
+    Point p2 = new Point(215,242);
+    Point p3 = new Point(375,153);
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

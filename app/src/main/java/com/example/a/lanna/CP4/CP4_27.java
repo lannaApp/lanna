@@ -1,6 +1,7 @@
 package com.example.a.lanna.CP4;
 
 
+import android.graphics.Point;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import java.util.ArrayList;
@@ -35,6 +36,11 @@ public class CP4_27 extends Fragment {
     private ImageView newButton;
     private Utils utils;
 
+    Point p1 = new Point(176,167);
+    Point p2 = new Point(93,211);
+    Point p3 = new Point(155,46);
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,10 +73,10 @@ public class CP4_27 extends Fragment {
             @Override
             public void onClick(View v) {
 
-                CP4 fm_cp4 = new CP4();
+                CP41 fm_cp41 = new CP41();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, fm_cp4);
+                transaction.replace(R.id.fragment_container, fm_cp41);
                 transaction.commit();
             }
         });

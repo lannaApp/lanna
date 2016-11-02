@@ -36,10 +36,9 @@ public class CP1_62 extends Fragment {
     MediaPlayer mPlayer;
     private ImageView newButton;
 
-    Point p1 = new Point(198,313);
-    Point p2 = new Point(289,281);
-    Point p3 = new Point(346,185);
-
+    Point p1 = new Point(191,265);
+    Point p2 = new Point(260,334);
+    Point p3 = new Point(339,194);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

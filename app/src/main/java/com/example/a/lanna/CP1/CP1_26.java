@@ -7,6 +7,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Point;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -36,6 +37,11 @@ public class CP1_26 extends Fragment {
     MediaPlayer mPlayer;
     private ImageView newButton;
 
+    Point p1 = new Point(159,123);
+    Point p2 = new Point(84,277);
+    Point p3 = new Point(290,298);
+    Point p4 = new Point(379,174);
+    Point p5 = new Point(291,85);
 
 
     @Override

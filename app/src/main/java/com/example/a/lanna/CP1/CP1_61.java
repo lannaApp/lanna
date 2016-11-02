@@ -36,9 +36,9 @@ public class CP1_61 extends Fragment {
     MediaPlayer mPlayer;
     private ImageView newButton;
 
-    Point p1 = new Point(189,264);
-    Point p2 = new Point(262,336);
-    Point p3 = new Point(337,200);
+    Point p1 = new Point(200,313);
+    Point p2 = new Point(283,282);
+    Point p3 = new Point(346,186);
 
 
 

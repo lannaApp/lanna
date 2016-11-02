@@ -28,6 +28,7 @@ public class Fmrank extends Fragment {
     private ImageView nextButton;
     private List<Score> name;
     private List<Score> score;
+    private ScoreAdapter scoreAdapter;
 
 
     public Fmrank() {
@@ -62,16 +63,10 @@ public class Fmrank extends Fragment {
         }
 
         DatabaseHandler db = new DatabaseHandler(this.getActivity());
-
+        scoreAdapter = new ScoreAdapter(this.getActivity(),db.getscore1());
 
         name = db.getscore1();
         score = db.getscore1();
-
-
-
-        adapter = new listview_row(getActivity(), name, score);
-
-
 
 
 

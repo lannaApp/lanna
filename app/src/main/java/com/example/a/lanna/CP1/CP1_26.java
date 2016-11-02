@@ -35,6 +35,8 @@ public class CP1_26 extends Fragment {
     MediaPlayer mPlayer;
     private ImageView newButton;
 
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

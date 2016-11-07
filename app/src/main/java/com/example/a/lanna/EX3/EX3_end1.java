@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.a.lanna.R;
 
@@ -78,16 +79,21 @@ public class EX3_end1 extends Fragment {
             public void onClick(View v) {
 
                 getname = setname.getText().toString();
-                System.out.println(mParam1);
-                System.out.println(getname);
 
-                Save3 save = Save3.newInstance(getname, mParam1);
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, save);
-                transaction.commit();
+                if (getname.equals("")) {
+                    Toast.makeText(getActivity(), "กรุณากรอกชื่อ !!", Toast.LENGTH_LONG).show();
 
+                }else {
+                    System.out.println(mParam1);
+                    System.out.println(getname);
 
+                    Save3 save = Save3.newInstance(getname, mParam1);
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, save);
+                    transaction.commit();
+
+                }
 
             }
         });

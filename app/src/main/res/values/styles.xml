@@ -19,8 +19,8 @@
 
     <style name="scview">
 
-        <item name="android:layout_marginRight">60dp</item>
-        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
 
     </style>
 
@@ -166,7 +166,7 @@
 
 
         <item name="android:layout_marginBottom">40dp</item>
-        <item name="android:layout_width">1600dp</item>
+        <item name="android:layout_width">160dp</item>
         <item name="android:layout_height">160dp</item>
 
     </style>

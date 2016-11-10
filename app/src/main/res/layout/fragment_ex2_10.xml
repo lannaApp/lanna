@@ -10,7 +10,8 @@
         android:id="@+id/btback"
         style="@style/bt_w"
         android:layout_gravity="left|top"
-        android:src="@drawable/ic_back" />
+        android:src="@drawable/ic_back"
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/btsound"
@@ -20,8 +21,10 @@
 
     <LinearLayout
         style="@style/ex2"
+        android:id="@+id/hidden"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         android:layout_gravity="center"
         android:orientation="horizontal">
 

@@ -10,7 +10,8 @@
         android:id="@+id/btback"
         style="@style/bt_w"
         android:layout_gravity="left|top"
-        android:src="@drawable/ic_back" />
+        android:src="@drawable/ic_back"
+        android:visibility="invisible" />
 
     <LinearLayout
         style="@style/ex4"

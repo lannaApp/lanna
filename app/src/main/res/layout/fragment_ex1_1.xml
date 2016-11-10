@@ -1,4 +1,5 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ex1_1"
@@ -10,7 +11,8 @@
         android:id="@+id/btback"
         style="@style/bt_w"
         android:layout_gravity="left|top"
-        android:src="@drawable/ic_back" />
+        android:src="@drawable/ic_back"
+        android:visibility="invisible" />
 
       <LinearLayout
             style="@style/ex1"

@@ -11,6 +11,11 @@
         style="@style/bt_w"
         android:layout_gravity="left|top"
         android:src="@drawable/ic_home" />
+    <ImageView
+        android:id="@+id/btdelete"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_gravity="right|top"  />
 
     <ImageView
         android:id="@+id/btnext"

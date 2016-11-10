@@ -129,8 +129,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.close(); // Closing database connection
     }
 
-
-    public void flushLocation(){
+//deleteall
+    public void deleteall(){
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_LOC1,null,null);
         db.delete(TABLE_LOC2,null,null);

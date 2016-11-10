@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.a.lanna.LV2;
 import com.example.a.lanna.R;
@@ -24,6 +25,7 @@ public class EX2_1 extends Fragment {
     private String mParam1;
     private String mParam2;
     private ImageView newImageView;
+    private LinearLayout layoutbt;
 
 
 
@@ -66,6 +68,8 @@ public class EX2_1 extends Fragment {
 
 
 
+        layoutbt = (LinearLayout) v.findViewById(R.id.hidden);
+
         // sound
         newImageView = (ImageView) v.findViewById(R.id.btsound);
         newImageView.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +78,10 @@ public class EX2_1 extends Fragment {
 
                 MediaPlayer mPlayer = MediaPlayer.create(getActivity(), R.raw.s1_004);
                 mPlayer.start();
+                if (layoutbt.getVisibility() != View.VISIBLE) {
+                    layoutbt.setVisibility(View.VISIBLE);
+                }
+
             }
         });
 

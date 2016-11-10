@@ -28,6 +28,7 @@ public class Fmrank extends Fragment {
     private List<Score> name;
     private List<Score> score;
     private ScoreAdapter scoreAdapter;
+    private ImageView deleteButton;
 
 
     public Fmrank() {
@@ -81,6 +82,7 @@ public class Fmrank extends Fragment {
         listView.setAdapter(scoreAdapter);
 
 
+
         //btback
         backButton = (ImageView) v.findViewById(R.id.bthome);
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -109,6 +111,21 @@ public class Fmrank extends Fragment {
                 transaction.commit();
             }
         });
+
+
+     final DatabaseHandler db = new DatabaseHandler(this.getActivity());
+        deleteButton = (ImageView) v.findViewById(R.id.btdelete);
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+               db.deleteall();
+
+            }
+        });
+
+
 
 
         return v;

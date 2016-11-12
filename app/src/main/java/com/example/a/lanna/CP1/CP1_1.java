@@ -43,8 +43,11 @@ public class CP1_1 extends Fragment {
     Utils utils;
     private Paint mPaint;
     MediaPlayer mPlayer;
-    private ImageView newButton;
+
     private ImageView okButton;
+    private ImageView btrestart;
+    private ImageView bt_back;
+    private ImageView bt_sound;
 
     //x,y
     Point p1 = new Point(77,150);
@@ -53,7 +56,9 @@ public class CP1_1 extends Fragment {
     Point p4 = new Point(340,47);
     Point p5 = new Point(429,148);
 
+
     private List<Point> mPoints = new ArrayList<Point>();
+
 
 
     @Override
@@ -66,6 +71,7 @@ public class CP1_1 extends Fragment {
         mPoints.add(p3);
         mPoints.add(p4);
         mPoints.add(p5);
+
         init();
 
     }
@@ -80,8 +86,8 @@ public class CP1_1 extends Fragment {
 
 
         //restart
-        newButton = (ImageView) v.findViewById(R.id.btrestart);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        btrestart = (ImageView) v.findViewById(R.id.btrestart);
+        btrestart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -94,8 +100,8 @@ public class CP1_1 extends Fragment {
         });
 
         //back
-        newButton = (ImageView) v.findViewById(R.id.btback);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        bt_back = (ImageView) v.findViewById(R.id.btback);
+        bt_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -108,8 +114,8 @@ public class CP1_1 extends Fragment {
         });
 
 
-        newButton = (ImageView) v.findViewById(R.id.btsound);
-        newButton.setOnClickListener(new View.OnClickListener() {
+        bt_sound = (ImageView) v.findViewById(R.id.btsound);
+        bt_sound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -241,18 +247,14 @@ public class CP1_1 extends Fragment {
             mPath.reset();
             mPath.moveTo(x, y);
             okButton.setVisibility(VISIBLE);
+            bt_sound.setVisibility(INVISIBLE);
             mX = x;
             mY = y;
         }
 
         private void touch_move(float x, float y) {
-            for (int i = 0;i<points.size();i++){
-                Point tp = points.get(i);
-                if ((tp.x <= x+10)&&(tp.y<=y+10)){
-                    score[i]++;
-                    Log.d("KUY",""+score[i]);
-                }
-            }
+
+
             float dx = Math.abs(x - mX);
             float dy = Math.abs(y - mY);
             mPath.moveTo(x,y);
@@ -260,9 +262,19 @@ public class CP1_1 extends Fragment {
                 mPath.quadTo(mX, mY, (x + mX) / 2, (y + mY) / 2);
                 mX = x;
                 mY = y;
-                circlePath.reset();
-                circlePath.addCircle(mX, mY, 30, Path.Direction.CW);
+//                circlePath.reset();
+//                circlePath.addCircle(mX, mY, 30, Path.Direction.CW);
             }
+
+            for (int i = 0;i<points.size();i++){
+                Point tp = points.get(i);
+// -----------------------------------------------------------------------------------------
+                if ((tp.x-10 <= x) && (tp.y-10 <= y) && (tp.x+10 >= x) && (tp.y+10 >= y)){
+                    score[i]++;
+                    Log.d("KKK", score[i]+"");
+                }
+            }
+
         }
 
         private void touch_up() {

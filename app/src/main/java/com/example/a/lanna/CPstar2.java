@@ -12,7 +12,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.a.lanna.CP1.CP1;
+import com.example.a.lanna.CP1.CP11;
+import com.example.a.lanna.CP1.CP111;
 import com.example.a.lanna.CP1.CP1_1;
+import com.example.a.lanna.CP2.CP2;
+import com.example.a.lanna.CP2.CP21;
+import com.example.a.lanna.CP3.CP3;
+import com.example.a.lanna.CP4.CP4;
+import com.example.a.lanna.CP4.CP41;
 
 
 public class CPstar2 extends Fragment {
@@ -66,41 +73,135 @@ public class CPstar2 extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_cpstar2, container, false);
 
-
-
-        //restart
-        btrestart = (ImageView) v.findViewById(R.id.btrestart);
-        btrestart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                CP1_1 fm_cp1_1 = new CP1_1();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, fm_cp1_1);
-                transaction.commit();
-
-
-
-            }
-        });
-
-        //btok
         bthome = (ImageView) v.findViewById(R.id.bthome);
-        bthome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                CP1 fm_cp1 = new CP1();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragment_container, fm_cp1);
-                transaction.commit();
+        if (mParam1 == "1") {
+
+            if (mParam2 == "1") {
 
 
+                bthome.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        CP1 fm_cp1 = new CP1();
+                        FragmentManager manager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction transaction = manager.beginTransaction();
+                        transaction.replace(R.id.fragment_container, fm_cp1);
+                        transaction.commit();
+                    }
+                });
+            }else if (mParam2 == "2"){
+
+                bthome.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        CP11 fm_cp1 = new CP11();
+                        FragmentManager manager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction transaction = manager.beginTransaction();
+                        transaction.replace(R.id.fragment_container, fm_cp1);
+                        transaction.commit();
+                    }
+                });
+
+            }else{
+
+                bthome.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        CP111 fm_cp1 = new CP111();
+                        FragmentManager manager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction transaction = manager.beginTransaction();
+                        transaction.replace(R.id.fragment_container, fm_cp1);
+                        transaction.commit();
+                    }
+                });
 
             }
-        });
+
+        } else if (mParam1 == "2") {
+
+
+            if (mParam2 == "1"){
+
+                bthome.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        CP2 fm_cp1 = new CP2();
+                        FragmentManager manager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction transaction = manager.beginTransaction();
+                        transaction.replace(R.id.fragment_container, fm_cp1);
+                        transaction.commit();
+                    }
+                });
+
+            }else{
+
+                bthome.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        CP21 fm_cp1 = new CP21();
+                        FragmentManager manager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction transaction = manager.beginTransaction();
+                        transaction.replace(R.id.fragment_container, fm_cp1);
+                        transaction.commit();
+                    }
+                });
+
+            }
+
+        } else if (mParam1 == "3") {
+
+
+            bthome.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    CP3 fm_cp1 = new CP3();
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.fragment_container, fm_cp1);
+                    transaction.commit();
+                }
+            });
+
+        } else {
+
+
+            if (mParam2 == "1"){
+
+                bthome.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        CP4 fm_cp1 = new CP4();
+                        FragmentManager manager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction transaction = manager.beginTransaction();
+                        transaction.replace(R.id.fragment_container, fm_cp1);
+                        transaction.commit();
+                    }
+                });
+
+            }else{
+
+                bthome.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        CP41 fm_cp1 = new CP41();
+                        FragmentManager manager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction transaction = manager.beginTransaction();
+                        transaction.replace(R.id.fragment_container, fm_cp1);
+                        transaction.commit();
+                    }
+                });
+
+            }
+        }
 
 
         return v;

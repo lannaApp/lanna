@@ -8,11 +8,7 @@
 
 
 
-    <ImageView
-        android:id="@+id/btrestart"
-        style="@style/bt_w"
-        android:layout_gravity="left|bottom"
-        android:src="@drawable/ic_retrun"   />
+
 
     <ImageView
         android:id="@+id/bthome"

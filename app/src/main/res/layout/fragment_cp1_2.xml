@@ -43,5 +43,12 @@
         android:src="@drawable/ic_speaker"  />
 
 
+    <ImageView
+        android:id="@+id/btok"
+        style="@style/bt_w"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/bt_ok"
+        android:visibility="invisible"/>
+
 
 </FrameLayout>

@@ -132,6 +132,9 @@ public class CP1_1 extends Fragment {
         init();
         mPlayer = MediaPlayer.create(getActivity(), R.raw.s1_001);
         mPlayer.start();
+
+
+
         okButton = (ImageView)v.findViewById(R.id.btok);
         okButton.setOnClickListener(new View.OnClickListener() {
             int[] sc = mView.getScore();
@@ -146,7 +149,7 @@ public class CP1_1 extends Fragment {
 
                 if(count <= 2){
                 //1
-                    CPstar star1 = new CPstar();
+                    CPstar star1 = CPstar.newInstance("1","1");;
                     FragmentManager manager = getActivity().getSupportFragmentManager();
                     FragmentTransaction transaction = manager.beginTransaction();
                     transaction.replace(R.id.fragment_container, star1);
@@ -154,7 +157,7 @@ public class CP1_1 extends Fragment {
 
                 }else if (count <= 3){
 
-                    CPstar2 star2 = new CPstar2();
+                    CPstar2 star2 = CPstar2.newInstance("1","1");;
                     FragmentManager manager = getActivity().getSupportFragmentManager();
                     FragmentTransaction transaction = manager.beginTransaction();
                     transaction.replace(R.id.fragment_container, star2);
@@ -162,7 +165,7 @@ public class CP1_1 extends Fragment {
                     //2
                 }else {
 
-                    CPstar3 star3 = new CPstar3();
+                    CPstar3 star3 = CPstar3.newInstance("1","1");;
                     FragmentManager manager = getActivity().getSupportFragmentManager();
                     FragmentTransaction transaction = manager.beginTransaction();
                     transaction.replace(R.id.fragment_container, star3);

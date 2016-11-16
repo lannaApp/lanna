@@ -124,10 +124,6 @@ public class CP21 extends Fragment {
         });
 
 
-
-
-
-
         //26
         button29 = (ImageView) v.findViewById(R.id.btcp2_26);
         button29.setOnClickListener(new View.OnClickListener() {

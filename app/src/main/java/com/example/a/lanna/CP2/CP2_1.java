@@ -22,8 +22,6 @@ public class CP2_1 extends Fragment {
     private ImageView newButton;
 
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_cp2_1, container, false);

@@ -5,15 +5,7 @@
     android:orientation="vertical"
     style="@style/fl">
 
-    <FrameLayout
-        android:id="@+id/fl_write"
-        android:layout_width="400dp"
-        android:layout_height="500dp"
-        android:layout_gravity="center">
-    </FrameLayout>
-
-
-    <FrameLayout
+         <FrameLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,6 +17,14 @@
             android:layout_gravity="center"
             android:src="@drawable/p4_020" />
     </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_write"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center">
+    </FrameLayout>
+
     <ImageView
         android:id="@+id/btback"
         style="@style/bt_w"

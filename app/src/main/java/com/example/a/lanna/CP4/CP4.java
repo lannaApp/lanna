@@ -32,7 +32,7 @@ public class CP4 extends Fragment {
     private ImageView button8;
     private ImageView button9;
     private ImageView button10;
-      private ImageView nextbutton;
+    private ImageView nextbutton;
     private ImageView homebutton;
 
 
